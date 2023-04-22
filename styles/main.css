@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    margin: center;
+}
+
+main{
+    background-color: #A8A9AD;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+footer {
+    margin: auto;
+}
+
+.content{
+    width: 800px;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 10px;
+    margin: auto;
+    width: 35%;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+}
+
+.image1 {
+    padding: 5px;
+}
+
+.heading1 {
+    text-align: center;
+    margin: auto;
+}
