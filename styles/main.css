@@ -39,3 +39,7 @@ footer {
     text-align: center;
     margin: auto;
 }
+
+a:link{
+    color:rgba(0, 0, 0, 0.8)
+}
