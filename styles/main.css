@@ -28,8 +28,11 @@ footer {
     border-radius: 25px;
 }
 
-.image1 {
+.image1 img {
     padding: 5px;
+    width: 120px; 
+    height: auto;
+    
 }
 
 .heading1 {
