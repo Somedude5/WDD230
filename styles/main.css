@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+
+body{
+    font-family: 'Instrument Serif', serif;
+} 
+
 header{
     display: flex;
 }
