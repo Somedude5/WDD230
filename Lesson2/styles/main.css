@@ -1,9 +1,25 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"); 
 
 /* Font */
 .body{
     font-family: 'Instrument Serif', serif;
+}
+
+a {   
+    color: black;   
+}
+
+a:active {
+    color: blue;
+}
+
+a[tabindex]:focus {
+    color:blue;
+    outline: none;
+}
+
+.h2_box{
+background-color: aqua;
 }
 
 .content{
@@ -26,18 +42,24 @@
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_2 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_3 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
 }
 
@@ -56,13 +78,16 @@
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_2 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
-        
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_3 {
@@ -70,6 +95,8 @@
         padding: 5px;
         height: 500px;
         grid-column: span 2;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
 }
 
@@ -89,6 +116,8 @@
         padding: 5px;
         height: 500px;
         row-gap: 30px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_2 {
@@ -96,12 +125,16 @@
         padding: 5px;
         height: 500px;
         row-gap: 30px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
     
     .bar_3 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
         height: 500px;
+        border-radius: 25px;
+        background-color: rgb(196, 190, 190);
     }
 
 }
