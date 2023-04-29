@@ -36,13 +36,13 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 30px;
         row-gap: 30px;
-        height: 900px;
+        height: 650px;
     }
 
     .bar_1 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
@@ -50,7 +50,7 @@ background-color: rgb(165, 224, 211);
     .bar_2 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
@@ -58,7 +58,7 @@ background-color: rgb(165, 224, 211);
     .bar_3 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
@@ -73,13 +73,13 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 40px;
         row-gap: 30px;
-        height: 900px;
+        height: 650px;
     }
 
     .bar_1 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
@@ -87,7 +87,7 @@ background-color: rgb(165, 224, 211);
     .bar_2 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
@@ -95,7 +95,7 @@ background-color: rgb(165, 224, 211);
     .bar_3 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         grid-column: span 2;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
@@ -111,13 +111,13 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 30px;
         row-gap: 30px;
-        height: 900px;
+        height: 650px;
     }
 
     .bar_1 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         row-gap: 30px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
@@ -126,7 +126,7 @@ background-color: rgb(165, 224, 211);
     .bar_2 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         row-gap: 30px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
@@ -135,7 +135,7 @@ background-color: rgb(165, 224, 211);
     .bar_3 {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 5px;
-        height: 900px;
+        height: 650px;
         border-radius: 25px;
         background-color: rgb(196, 190, 190);
     }
