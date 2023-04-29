@@ -36,6 +36,7 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 30px;
         row-gap: 30px;
+        height: 900px;
     }
 
     .bar_1 {
@@ -72,6 +73,7 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 40px;
         row-gap: 30px;
+        height: 900px;
     }
 
     .bar_1 {
@@ -109,6 +111,7 @@ background-color: rgb(165, 224, 211);
         padding: 10px;
         column-gap: 30px;
         row-gap: 30px;
+        height: 900px;
     }
 
     .bar_1 {
