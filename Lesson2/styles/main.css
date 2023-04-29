@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"); 
+
+/* Font */
+.body{
+    font-family: 'Instrument Serif', serif;
+}
+
+.content{
+    margin: auto;
+    padding: 10px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+        column-gap: 30px;
+    }
+
+    .bar_1 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_2 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_3 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding: 10px;
+        column-gap: 40px;
+    }
+
+    .bar_1 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_2 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_3 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+        grid-column: span 2;
+
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        padding: 10px;
+        column-gap: 30px;
+    }
+
+    .bar_1 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_2 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+    
+    .bar_3 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        height: 500px;
+    }
+
+}
+
+.main_title {
+    background-color: grey;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Content */
