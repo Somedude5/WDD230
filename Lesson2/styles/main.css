@@ -1,8 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 
 /* Font */
 .body{
     font-family: 'Instrument Serif', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 
 a {   
