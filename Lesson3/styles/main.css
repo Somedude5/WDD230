@@ -1,15 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Ubuntu&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
 :root{
   --header-bg-color: #4E6766;
   --menu-bg-color: #1E152A;
-  --menu-highlight-color: #AEC3B0;
+  --menu-highlight-color: #5AB1BB;
   --body-bg-color: #EFF6E0;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  min-height: 100vh;
+  /*font-family: "Open Sans", sans-serif;*/
+
+  /*font-family: 'Italiana', serif;*/
+
+  font-family: 'Pathway Gothic One', sans-serif;
+  min-height: 00vh;
+  font-size: 20px;
 }
 
 header,
@@ -18,7 +28,13 @@ main {
   max-width: 800px;
   min-width: 480px;
   margin: 0 auto;
+  text-align: center;
 }
+
+main {
+  margin: auto;
+}
+
 header {
   background-color: var(--header-bg-color);
   text-align: center;
