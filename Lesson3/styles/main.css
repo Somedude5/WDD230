@@ -64,6 +64,11 @@ footer {
   color: white;
 }
 
+#navbar2{
+  background-color: var(--menu-bg-color);
+  color: white;
+}
+
 #navbar-active{
   background-color: var(--menu-highlight-color);
 }
