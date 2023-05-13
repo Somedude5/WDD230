@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Ubuntu&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        /*font-family: "Open Sans", sans-serif;*/
+      
+        /*font-family: 'Italiana', serif;*/
+      
+        font-family: 'Pathway Gothic One', sans-serif;
+        min-height: 00vh;
+        font-size: 20px;
+      }
+      
+      header,
+      footer,
+      main {
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      main {
+        margin: auto;
+      }
+      
+      header {
+        background-color: var(--header-bg-color);
+        text-align: center;
+        border: 1px solid black;
+        padding: 1rem;
+        color: white;
+        border-radius: 50px 50px 0px 0px;
+      }
+        
+      
+      footer {
+        background-color: var(--header-bg-color);
+        text-align: center;
+        border: 1px solid black;
+        padding: 1rem;
+        color: white;
+        border-radius: 0px 0px 50px 50px;
+      }
+      
+      #siteheader{
+        background-color: var(--header-bg-color);
+        color: white;
+      }
+      
+      #navbar{
+        background-color: var(--menu-bg-color);
+        color: white;
+      }
+      
+      #navbar2{
+        background-color: var(--menu-bg-color);
+        color: white;
+      }
+      
+      #navbar-active{
+        background-color: var(--menu-highlight-color);
+      }
+      
+      nav {
+        background-color: var(--menu-bg-color);
+        max-width: 832px; 
+        min-width: 480px;
+        margin: 0 auto;
+        border: 1px solid black;  
+      }
+      
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-inline-start: 0px;
+        margin-block: 0px;
+        width: 100%;  
+      }
+      
+      nav ul li {
+        border: 1px solid black;
+        width: 100%;
+        color: white;
+        text-align: center;
+        
+      }
+      
+      nav a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;    
+        color: white;
+        font-size: 1.25rem;
+      }
+      
+      /* hamburger display */
+      
+      
+      
+      nav ul li a:hover{
+        background-color: var(--menu-highlight-color);
+        color: black;
+      }
+      
+      h1{
+          text-align: center;
+      }
+      
+      table{
+        border-collapse: collapse;
+      }
+      
+      td{
+        border: 1px solid black;  
+        padding: 1rem;
+      }
+      
+      img{
+        border: 2px solid black;
+      }
+      
+      nav ul li.active a{
+        background-color: var(--menu-highlight-color);
+      }
+      
+      .active a{  
+        color: black;
+      }
+      
+      .active{
+        background-color: var(--menu-highlight-color);
+      }
+      
+      /* Grid items */
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+        padding: 40px 0;
+        font-size: 30px;
+      }
+      
+      .grid-item1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      
+      .grid-item2 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      
+      .grid-item3 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      
+      .logo {
+        width: 15%;
+      } 
+
+    nav ul {
+      flex-direction: row;
+    }
+  
+    nav a {
+      padding: .5rem;
+      font-size: 1rem;
+    }
+  
+    #menu-button{
+      display: none;
+    }
+  
+    #navbar{
+      display: flex;
+    }
+  
+} 

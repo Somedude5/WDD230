@@ -5,6 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 
+@media screen and (min-width: 480) {
+
+
+}  
+
+
+
 :root{
   --header-bg-color: #4E6766;
   --menu-bg-color: #1E152A;
@@ -107,32 +114,6 @@ nav a {
   font-size: 1.25rem;
 }
 
-/* hamburger display */
-
-#navbar{
-  display: none;
-}
-
-#navbar.active{
-  display: flex;
-}
-
-#menu-open{
-  display: block;
-}
-
-#menu-open.active{
-  display: none;
-}
-
-#menu-close{
-  display: none;
-}
-
-#menu-close.active{
-  display: flex;
-}
-
 nav ul li a:hover{
   background-color: var(--menu-highlight-color);
   color: black;
@@ -167,24 +148,38 @@ nav ul li.active a{
   background-color: var(--menu-highlight-color);
 }
 
-/* Media Query Updates for middle widths */
+/* Grid items */
 
-@media screen and (min-width: 640px) {
-  nav ul {
-    flex-direction: row;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
 
-  nav a {
-    padding: .5rem;
-    font-size: 1rem;
-  }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 40px 0;
+  font-size: 30px;
+}
 
-  #menu-button{
-    display: none;
-  }
+.grid-item1 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
 
-  #navbar{
-    display: flex;
-  }
+.grid-item2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
 
-}  
+.grid-item3 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.logo {
+  width: 15%;
+}
