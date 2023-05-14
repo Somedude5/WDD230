@@ -102,9 +102,6 @@
         font-size: 1.25rem;
       }
       
-      /* hamburger display */
-      
-      
       
       nav ul li a:hover{
         background-color: var(--menu-highlight-color);
@@ -145,9 +142,9 @@
       .grid-container {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
+        gap: 5px;
+        /* background-color: #2196F3; */
+        padding: 5px;
       }
       
       .grid-container > div {

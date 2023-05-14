@@ -152,10 +152,10 @@ nav ul li.active a{
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  background-color:black;
+  padding: 5px;
 }
 
 .grid-container > div {
@@ -166,18 +166,18 @@ nav ul li.active a{
 }
 
 .grid-item1 {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .grid-item2 {
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
 }
 
 .grid-item3 {
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
 }
 
 .logo {
