@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Ubuntu&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
+@media screen and (min-width: 480px) {
+
+  /* hamburger menu stuff */
+
+  #menu::before {
+    content: "≡";
+  }
+
+  .navigation li {
+      display: none;
+  }
+
+  .show li {
+      display: block;
+  }
+
+  #menu.show::before {
+      content: "X";
+  }
+
+
+  /* Grid items */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    background-color:black;
+    padding: 5px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 40px 0;
+    font-size: 30px;
+  }
+
+  .grid-item1{
+    grid-row: 2;
+  }
+
+  .grid-item2{
+    grid-row: 1;
+  }
+
+  .grid-item3{
+    grid-row: 5;
+  }
+
+  .grid-item4{
+    grid-row: 3;
+  }
+
+  .grid-item5{
+    grid-row: 6;
+    display: none;
+  }
+
+  .grid-item6{
+    grid-row: 4;
+    
+  }
+
+
+  
+}  
+
