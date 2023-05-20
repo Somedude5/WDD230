@@ -18,3 +18,15 @@ hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
 });
+
+
+//script content for the banner for mondays and tuesdays
+window.addEventListener('DOMContentLoaded', function() {
+	var currentDate = new Date();
+	var dayOfWeek = currentDate.getDay();
+
+	// Display the banner only on Mondays (1) or Tuesdays (2)
+	if (dayOfWeek === 1 || dayOfWeek === 2) {
+		document.getElementById('banner').style.display = 'block';
+	}
+});

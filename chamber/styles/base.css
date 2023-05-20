@@ -105,6 +105,8 @@ nav ul li a:hover{
     color: black;
 }
 
+.menu
+
 h1{
     text-align: center;
 }
@@ -138,6 +140,32 @@ nav ul li.active a{
     width: 15%;
 }
 
-/* HAMBURGER MENU ITEMS */
+#menu:hover {
+    background: #5AB1BB;
+}
+
+/* Tuesday Banner content */
+#banner {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.spot-grid-1,.spot-grid-2,.spot-grid-3 {
+    border: 1px solid black;  
+    padding: 1rem;
+  }
 
 
+/* buttons for Twitter and Facebook */
+
+#media_Links {
+    float: right;
+    scale: 50%;
+}

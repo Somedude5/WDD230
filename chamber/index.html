@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="./styles/base.css">    
 </head>
 <body>
-    <header>        
+    <header>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>        
         <h1>Lazio Chamber of Commerce</h1>
         <img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo"> 
-        <h2><span id="currentdate"></span><span id="currentyear"></span> <button><img src="./images/facebookicon.png" alt="facebook icon"></button> <button><img src="./images/twittericon.png" alt="twitter icon"></button></h2>
+        <h2><span id="currentdate"></span><span id="currentyear"></span> <div id="media_Links"><button id="facebook_button"><a href="https://www.facebook.com/home"><img src="./images/facebookicon.png" alt="facebook icon"></a></button> <button id="twitter_button"><a href="https://twitter.com/"><img src="./images/twittericon.png" alt="twitter icon"></a></button></div></h2>
     </header>
     <nav>
         <a id="menu" href="#"></a>
@@ -31,12 +32,29 @@
     </nav>    
     <main>
         <div class="grid-container">
-            <div class="grid-item1">Event</div>
-            <div class="grid-item2">call to action!</div>
-            <div class="grid-item3">Spotlights</div>  
-            <div class="grid-item4">Weather</div>
-            <div class="grid-item5">Join</div>
-            <div class="grid-item6">News Release</div>
+            <div class="grid-item1">Event
+                <p>Come make a custom pizza at Linguini's!</p>
+            </div>
+            <div class="grid-item2"><h3>Welcome to Lazio</h3>
+                <p>Land of the artichoke!</p>
+                <button>Join</button>
+            </div>
+            <div class="grid-item3"><h5>Spotlights</h5>
+                <div class="spotlight-grid-container">
+                    <div class="spot-grid-1">spotlight 1</div>
+                    <div class="spot-grid-2">spotlight 2</div>
+                    <div class="spot-grid-3">spotlight 3</div>
+                </div>
+            </div>  
+            <div class="grid-item4">Weather
+
+            </div>
+            <div class="grid-item5">Join
+                <button id="connected_button">Get Connected!</button>
+            </div>
+            <div class="grid-item6">News Release
+
+            </div>
           </div>
     </main>
     <footer>

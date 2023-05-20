@@ -69,7 +69,28 @@
     
   }
 
+  /* Spotlight grid Container and items */
+  .spotlight-grid-container {
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    gap: 5px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
 
-  
+  .spot-grid-1 {
+    grid-row: 1;
+  }
+
+  .spot-grid-2 {
+    grid-row: 2;
+  }
+
+  .spot-grid-3 {
+    display: none;
+    grid-row: 3;
+    /* grid-column: ; */
+  }
+
 }  
 
