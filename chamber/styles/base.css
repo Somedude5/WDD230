@@ -18,7 +18,7 @@ body {
 header,
 footer,
 main {
-    max-width: 800px;
+    max-width: 900px;
     min-width: 480px;
     margin: 0 auto;
     text-align: center;
@@ -35,7 +35,6 @@ header {
     border: 1px solid black;
     padding: 1rem;
     color: white;
-    border-radius: 50px 50px 0px 0px;
 }
 
 
@@ -45,7 +44,6 @@ footer {
     border: 1px solid black;
     padding: 1rem;
     color: white;
-    border-radius: 0px 0px 50px 50px;
 }
 
 #siteheader{
@@ -105,8 +103,6 @@ nav ul li a:hover{
     color: black;
 }
 
-.menu
-
 h1{
     text-align: center;
 }
@@ -120,9 +116,6 @@ td{
     padding: 1rem;
 }
 
-img{
-    border: 2px solid black;
-}
 
 nav ul li.active a{
     background-color: var(--menu-highlight-color);
@@ -147,7 +140,7 @@ nav ul li.active a{
 /* Tuesday Banner content */
 #banner {
     display: none;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -182,5 +175,48 @@ a:link {
   /* mouse over link */
   a:hover {
     color: #5AB1BB;
-  }
+}
   
+/* Grid-container and grid item settings*/
+
+.grid-container {
+    gap: 10px;
+    padding: 5px;
+    border: 5px;
+}
+
+.grid-item1 {
+    padding-left: 80px;
+
+}
+
+.grid-item2 {
+   
+
+}
+
+.grid-item3 {
+
+}
+
+.grid-item4 {
+
+}
+
+.grid-item5 {
+
+}
+
+.grid-item6 {
+
+}
+
+.grid-container > div {
+    text-align: left;
+    padding: 40px 5px;
+    font-size: 30px;
+}
+
+#twitter_button {
+    scale: 50%;
+}

@@ -31,50 +31,50 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5px;
-    background-color:black;
-    padding: 5px;
   }
   
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: left;
-    padding: 40px 0;
-    font-size: 30px;
-  }
 
   .grid-item1{
     grid-row: 2;
+    background-color: rgba(81, 75, 67, 0.315);
+
   }
 
   .grid-item2{
     grid-row: 1;
+    background-color: rgba(81, 75, 67, 0.315);
+
   }
 
   .grid-item3{
     grid-row: 5;
+    background-color: rgba(81, 75, 67, 0.315);
+
   }
 
   .grid-item4{
     grid-row: 3;
+    background-color: rgba(81, 75, 67, 0.315);
+
   }
 
   .grid-item5{
     grid-row: 6;
     display: none;
+    background-color: rgba(81, 75, 67, 0.315);
+
   }
 
   .grid-item6{
     grid-row: 4;
+    background-color: rgba(81, 75, 67, 0.315);
     
   }
 
   /* Spotlight grid Container and items */
   .spotlight-grid-container {
     display: grid;
-    grid-template-rows:1fr 1fr;
     gap: 5px;
-    /* background-color: #2196F3; */
     padding: 10px;
   }
 
