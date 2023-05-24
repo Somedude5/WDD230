@@ -169,3 +169,18 @@ nav ul li.active a{
     float: right;
     scale: 50%;
 }
+
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #5AB1BB;
+  }
+  
