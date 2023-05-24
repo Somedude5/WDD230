@@ -21,7 +21,7 @@ input_button.addEventListener('click', () =>
     lists.append(newlistitem)
     deleteButton.addEventListener('click', () => 
     {
-        lists.remove()
+        newlistitem.remove()
     })
     user_input.focus()
     user_input.value = ""
