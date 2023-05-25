@@ -1,31 +1,40 @@
-const input_button = document.querySelector("button");
-
-const user_input = document.querySelector("#favchap");
-
+const inputButton = document.querySelector("button");
+const userInput = document.querySelector("#favchap");
 const lists = document.querySelector("#list");
 
+inputButton.addEventListener('click', addItem);
 
-input_button.addEventListener('click', () => 
-{
-    if (user_input.value == ""){
-        return
-    }
+function addItem() {
+  const value = userInput.value.trim();
+  if (value === "") {
+    return;
+  }
 
-    newlistitem = document.createElement('li')
-    deleteButton = document.createElement('button')
-    newlistitem.textContent = user_input.value
-    newlistitem.style.color = "red"
-    newlistitem.style.backgroundColor = "blue"
-    deleteButton.textContent = '❌'
-    newlistitem.append(deleteButton)
-    lists.append(newlistitem)
-    deleteButton.addEventListener('click', () => 
-    {
-        newlistitem.remove()
-    })
-    user_input.focus()
-    user_input.value = ""
-});
+  const newItem = createListItem(value);
+  lists.appendChild(newItem);
+
+  userInput.focus();
+  userInput.value = "";
+}
+
+function createListItem(value) {
+  const newListItem = document.createElement('li');
+  const deleteButton = document.createElement('button');
+
+  newListItem.textContent = value;
+//   newListItem.style.color = "red";
+//   newListItem.style.backgroundColor = "blue";
+
+  deleteButton.textContent = '❌';
+  newListItem.appendChild(deleteButton);
+
+  deleteButton.addEventListener('click', () => {
+    newListItem.remove();
+  });
+
+  return newListItem;
+}
+
 
 
 // make sure the input is not blank before doing the following remaining tasks in this list
