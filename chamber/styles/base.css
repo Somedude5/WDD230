@@ -35,8 +35,14 @@ header {
     border: 1px solid black;
     padding: 1rem;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
-
+.logoText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 footer {
     background-color: var(--header-bg-color);
@@ -158,9 +164,16 @@ nav ul li.active a{
 
 /* buttons for Twitter and Facebook */
 
-#media_Links {
-    float: right;
+#twitter_button {
     scale: 50%;
+}
+
+#facebook_button {
+    scale: 50%;
+}
+
+.icon_grid {
+    display: flex;
 }
 
 a:link {
@@ -217,6 +230,12 @@ a:link {
     font-size: 30px;
 }
 
-#twitter_button {
-    scale: 50%;
+#currentdate {
+    text-align: center;
+}
+
+.spotlight-grid-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }

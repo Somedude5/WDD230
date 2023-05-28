@@ -7,6 +7,7 @@
     <meta name="description" content="Home Page for the Lazio Chamber of Commerce Site">
     <title>Lazio Chamber of Commerce - Home</title>
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
     <link rel="icon" href="./images/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -16,11 +17,18 @@
 </head>
 <body>
     <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
-    <header>        
-         <h1><img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo"> Lazio Chamber of Commerce</h1>
-         <a href="https://www.facebook.com/home" id="facebook_button"><img src="./images/facebookicon.png" alt="facebook icon"></a> <a href="https://twitter.com/" id="twitter_button"><img src="./images/twittericon.png" alt="twitter icon"></a></div> 
-        <h2><span id="currentdate"></span><span id="currentyear"></span> <div id="media_Links"></h2>
+    <header>  
+        <div class="logoText">
+            <img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo">      
+         <h1> Lazio Chamber of Commerce</h1>
+        </div>
+         <div class="icon_grid">
+            <a href="https://www.facebook.com/home" id="facebook_button"><img src="./images/facebookicon.png" alt="facebook icon"></a>
+            <a href="https://twitter.com/" id="twitter_button"><img src="./images/twittericon.png" alt="twitter icon"></a>
+        </div>
+        
     </header>
+    <h2 id="currentdate"></h2>
     <nav>
         <a id="menu" href="#"></a>
         <ul id="navbar" class="navigation">
@@ -41,13 +49,15 @@
             </div>
             <div class="grid-item3">
                 <div class="spotlight-grid-container">
-                    <div class="spot-grid-1">spotlight 1</div>
+                    <div class="spot-grid-1">spotlight 1 <img src="./images/Spaghetti-Sauce-Recipe-6.jpg" alt="Spaghetti picture"></div>
                     <div class="spot-grid-2">spotlight 2</div>
                     <div class="spot-grid-3">spotlight 3</div>
                 </div>
             </div>  
             <div class="grid-item4">Weather
-
+                <p>temperature: <span id="temperature"></span></p>
+                <p>windspeed: <span id="windspeed"></span></p>
+                <p>Windchill: <span id="windchill"></span></p>
             </div>
             <div class="grid-item5">Join
                 <button id="connected_button">Get Connected!</button>
