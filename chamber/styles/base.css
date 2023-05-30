@@ -12,13 +12,13 @@ body {
 
     font-family: 'Pathway Gothic One', sans-serif;
     min-height: 00vh;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 header,
 footer,
 main {
-    max-width: 900px;
+    max-width: 1000px;
     min-width: 480px;
     margin: 0 auto;
     text-align: center;
@@ -200,6 +200,7 @@ a:link {
 
 .grid-item1 {
     padding-left: 80px;
+    font-size: 20px;
 
 }
 
@@ -213,7 +214,7 @@ a:link {
 }
 
 .grid-item4 {
-
+    font-size: 20px;
 }
 
 .grid-item5 {
@@ -227,7 +228,7 @@ a:link {
 .grid-container > div {
     text-align: left;
     padding: 40px 5px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 #currentdate {
@@ -238,4 +239,8 @@ a:link {
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+
+.grid-item2 button {
+    : center;
 }
