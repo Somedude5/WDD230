@@ -1,0 +1,5 @@
+picture img {
+    display: block;
+    box-shadow: 5px 5px 5px 5px #246;
+    margin: 5px;
+}
