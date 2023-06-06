@@ -10,11 +10,25 @@
 </head>
 <h1>Lazy Loading Example</h1>
 <body>
-    <picture><img src="./images/img_1.webp" alt="Background 1" loading="lazy" height="800"></picture>
-    <picture><img src="./images/img_2.webp" alt="Background 2" loading="lazy" height="800"></picture>
-    <picture><img src="./images/img_3.webp" alt="Background 3" loading="lazy" height="800"></picture>
-    <picture><img src="./images/img_4.webp" alt="Background 4" loading="lazy" height="800"></picture>
-    <picture><img src="./images/img_5.webp" alt="Background 5" loading="lazy" height="800"></picture>
-    <picture><img src="./images/img_6.webp" alt="Background 6" loading="lazy" height="800"></picture>
+    <div id="image-container">
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_1.webp" alt="Image 1" width="300" height="400">
+        </picture>
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_2.webp" alt="Image 2" width="300" height="400">
+        </picture>
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_3.webp" alt="Image 3" width="300" height="400">
+        </picture>
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_4.webp" alt="Image 4" width="300" height="400">
+        </picture>
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_5.webp" alt="Image 5" width="300" height="400">
+        </picture>
+        <picture>
+          <img src="./images/placeholder_image.webp" data-src="./images/img_6.webp" alt="Image 6" width="300" height="400">
+        </picture>
+      </div>
 </body>
 </html>

@@ -1,5 +1,16 @@
-picture img {
-    display: block;
-    box-shadow: 5px 5px 5px 5px #246;
-    margin: 5px;
+#image-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+  
+img {
+    margin: 10px;
+    border: 5px solid green;
+    opacity: 0;
+    transition: opacity 8s ease;
+  }
+
+img.loaded {
+    opacity: 1;
 }

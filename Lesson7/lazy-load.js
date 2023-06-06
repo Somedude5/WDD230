@@ -1,30 +1,25 @@
-const images = document.querySelectorAll("[data-src]")
 
-function preloadImage(img) {
-    const src = img.getAttribute("data-src")
-    if(!src) {
-        return;
-    }
-
-    img.src = src;
-}
-
-const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 300px 0px"
-}
-
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+// Make a  Intersection Observer instance
+const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        } else {
-            preloadImage(entry.target)
-            imgObserver.unobserve(entry.target)
-        }
-    })
-}, imgOptions)
+      // If the image is intersecting with the viewport
+      if (entry.isIntersecting) {
+        const img = entry.target
+        const src = img.getAttribute('data-src')
+  
+        img.setAttribute('src', src)
 
-images.forEach(image => {
-    imgObserver.observe(image)
+        img.classList.add('loaded')
+  
+        observer.unobserve(img)
+      }
+    })
 })
+  
+// Get all the actual images with the data-src attribute
+  const images = document.querySelectorAll('img[data-src]')
+  
+  images.forEach(image => {
+    observer.observe(image)
+})
+  
