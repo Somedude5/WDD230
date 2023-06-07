@@ -241,6 +241,39 @@ a:link {
     object-fit: cover;
 }
 
-.grid-item2 button {
+/* CSS for gallery and image descriptions */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+.gallery .image {
+    flex: 1 1 100%;
+}
+
+.gallery .image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery .description {
+    flex: 1 1 100%;
+}
+
+/* CSS for hover effect */
+.gallery .image img:hover {
+    opacity: 0.7;
+}
+
+/* CSS for time visited display */
+#time-visited {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
