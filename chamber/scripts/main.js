@@ -30,3 +30,4 @@ window.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('banner').style.display = 'block';
 	}
 });
+

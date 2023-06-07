@@ -246,6 +246,7 @@ a:link {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    
 }
 
 .gallery .image {
@@ -264,7 +265,8 @@ a:link {
 
 /* CSS for hover effect */
 .gallery .image img:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    box-shadow: 0 0 50px black;
 }
 
 /* CSS for time visited display */
@@ -272,7 +274,7 @@ a:link {
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: #fff;
+    background-color: #ffffff4a;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

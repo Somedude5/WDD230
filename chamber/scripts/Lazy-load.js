@@ -1,7 +1,8 @@
-// Lazy loading for images
-const images = document.querySelectorAll(".gallery img");
 
-const options = {
+// Lazy loading for images
+const images = document.querySelectorAll(".gallery image");
+
+const other_options = {
 root: null,
 rootMargin: "0px",
 threshold: 0.1
@@ -16,7 +17,7 @@ entries.forEach((entry) => {
 });
 };
 
-const observer = new IntersectionObserver(handleIntersection, options);
+const observer = new IntersectionObserver(handleIntersection, other_options);
 
 images.forEach((image) => {
 observer.observe(image);
