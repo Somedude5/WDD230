@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build Page</title>
+    <style>
+        main {
+            display: flex;
+        }
+        section {
+            width: 50%;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        label {
+            display: block;
+            font-size: .75rem;
+        }
+        input {
+            display: block;
+            margin-bottom: .5rem;
+            padding: .5rem;
+        }
+        textarea {
+            display: block;
+        }
+        .myradio {
+            display: inline;
+            margin: 0px 5px 8px 0px;
+        }
+        .mysubmit {
+            font-size: 1.5rem;
+            background-color: aquamarine;
+            color: aliceblue;
+            padding: .5rem;
+        }
+
+        @media(max-width: 800px) {
+            main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form method = 'GET'action="page2.html">
+                <label>First name <input name = "fname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
+                <label>Last name <input name = "lname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
+                <p>Temperature:</p> 
+                <label> <input class = "myradio" name = "temp" type="radio" value="hot">hot</label>
+                <label> <input class = "myradio" name = "temp"  type="radio" value="warm">warm</label>
+                <label> <input class = "myradio" name = "temp"  type="radio" value="cold">cold</label>
+                <label>Description: <textarea name="description" id="" cols="40" rows="5"></textarea></label>
+                <input class = "mysubmit" type="submit" name="go" value="SUBMIT">
+            </form>
+        </section>
+        <section>
+            <p>asnfjkdknfaskwjnsnkfasjndjsfanjsfaldjn</p>
+        </section>
+    </main>
+    
+</body>
+</html>
