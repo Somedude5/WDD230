@@ -1,0 +1,105 @@
+
+main {
+    display: flex;
+    min-width: 600px;
+}
+
+p {
+text-align: center;
+color: white;
+}
+section {
+    width: 35%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background: linear-gradient(to top, white 50.5%, black 49.5%);
+}
+label {
+    display: block;
+    font-size: .75rem;
+}
+input {
+    display: block;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+textarea {
+    display: block;
+}
+.myradio {
+    /* display: inline; */
+    margin: 5px 5px 8px 0px;
+
+}
+
+.myradio3 {
+    /* display: inline; */
+    margin: 13px 5px 8px 0px;
+
+}
+
+.myradio_hidden{
+    margin: 0px 5px 8px 0px;
+    opacity: 0%;
+}
+
+.mysubmit {
+    font-size: 1.5rem;
+    background-color: aquamarine;
+    color: aliceblue;
+    padding: .5rem;
+}
+
+@media(max-width: 800px) {
+    main{
+        display: block;
+    }
+}
+
+.tier-Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    background: linear-gradient(to bottom, black 25%, white 25%, white 50%, rgb(219, 217, 217) 50%, rgb(219, 217, 217) 75%, white 75%);
+
+    
+}
+
+.column1{
+    display: inline-block;
+    grid-column: 1;
+    border: 1px  solid black;
+    text-align: center;
+    
+}
+
+.column2{
+    grid-column: 2;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, Gray 25%, white 25%, white 50%, rgb(219, 217, 217) 50%, rgb(219, 217, 217) 75%, white 75%);
+
+}
+
+.column3{
+    grid-column: 3;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, Gray 25%, white 25%, white 50%, rgb(219, 217, 217) 50%, rgb(219, 217, 217) 75%, white 75%);
+}
+
+.column4{
+    grid-column: 4;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, Gray 25%, white 25%, white 50%, rgb(219, 217, 217) 50%, rgb(219, 217, 217) 75%, white 75%);
+}
+
+.label.myradio{
+    border: 1px solid black;
+}
+
+.lines{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

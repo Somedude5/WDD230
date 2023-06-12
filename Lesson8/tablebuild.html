@@ -4,64 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Build Page</title>
-    <style>
-        main {
-            display: flex;
-        }
-        section {
-            width: 50%;
-            margin: 1rem;
-            padding: 1rem;
-            border: 1px solid black;
-        }
-        label {
-            display: block;
-            font-size: .75rem;
-        }
-        input {
-            display: block;
-            margin-bottom: .5rem;
-            padding: .5rem;
-        }
-        textarea {
-            display: block;
-        }
-        .myradio {
-            display: inline;
-            margin: 0px 5px 8px 0px;
-        }
-        .mysubmit {
-            font-size: 1.5rem;
-            background-color: aquamarine;
-            color: aliceblue;
-            padding: .5rem;
-        }
-
-        @media(max-width: 800px) {
-            main{
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./table.css">
+    <title>Table Build Page</title> 
 </head>
 <body>
     <main>
-        <section>
-            <form method = 'GET'action="page2.html">
-                <label>First name <input name = "fname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
-                <label>Last name <input name = "lname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
-                <p>Temperature:</p> 
-                <label> <input class = "myradio" name = "temp" type="radio" value="hot">hot</label>
-                <label> <input class = "myradio" name = "temp"  type="radio" value="warm">warm</label>
-                <label> <input class = "myradio" name = "temp"  type="radio" value="cold">cold</label>
-                <label>Description: <textarea name="description" id="" cols="40" rows="5"></textarea></label>
-                <input class = "mysubmit" type="submit" name="go" value="SUBMIT">
+        <section class="lines">
+            <form method = 'GET' action = "page2.html">
+                <!-- <label>First name <input name = "fname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
+                <label>Last name <input name = "lname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label> -->
+                <p>ACME Wild West Services</p>
+
+                <div class = "tier-Grid">
+                    <div class="column1">
+                        <label class="myradio_hidden">Tiers:</label>
+                        <label class = "myradio3">Feature 1</label>
+                        <label class = "myradio3">Feature 2</label>
+                        <label class = "myradio3">Feature 3</label>
+                    </div>
+                
+                    <div class="column2">
+                        <label class = "myradio">Basic</label>
+                        <label class = "myradio">&#10003;</label>
+                        <label class = "myradio">&#10005;</label>
+                        <label class = "myradio">&#10005;</label>
+                    </div>
+
+                    <div class="column3">
+                        <label class = "myradio">Premium</label>
+                        <label class = "myradio">&#10003;</label>
+                        <label class = "myradio">&#10003;</label>
+                        <label class = "myradio">&#10005;</label>
+                    </div>
+                    
+                    <div class="column4">
+                        <label class = "myradio">Deluxe</label>
+                        <label class = "myradio">&#10003;</label>
+                        <label class = "myradio">&#10003;</label>
+                        <label class = "myradio">&#10003;</label>
+                    </div>
+                </div>
+
+                <!-- <label>Description: <textarea name="description" id="" cols="40" rows="5"></textarea></label>
+                
+                <input class = "mysubmit" type="submit" name="go" value="SUBMIT"> -->
             </form>
         </section>
-        <section>
+        <!-- <section>
             <p>asnfjkdknfaskwjnsnkfasjndjsfanjsfaldjn</p>
-        </section>
+        </section> -->
     </main>
     
 </body>
