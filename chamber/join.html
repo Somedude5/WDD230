@@ -6,9 +6,30 @@
   <title>Membership Form</title>
   <link rel="stylesheet" href="./styles/form.css">
   <script src="./scripts/forms.js" defer></script>
+  <link rel="icon" href="./images/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/large.css">
+  <link rel="stylesheet" href="./styles/base.css">    
 </head>
+
+
 <body>
-  <form action="./thankyou.html" method="post">
+
+  <header>  
+    <div class="logoText">
+        <img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo">      
+      <h1> Lazio Chamber of Commerce</h1>
+    </div>
+      <div class="icon_grid">
+        <a href="https://www.facebook.com/home" id="facebook_button"><img src="./images/facebookicon.png" alt="facebook icon"></a>
+        <a href="https://twitter.com/" id="twitter_button"><img src="./images/twittericon.png" alt="twitter icon"></a>
+    </div>
+    
+  </header>
+
+  <form action="./thankyou.html" method="get">
     <h1>Membership Form</h1>
     <div class="input-grid">
 
@@ -24,7 +45,7 @@
 
       <div class="b-title">
         <label for="position">Business Position Title:</label>
-        <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}" title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters.">
+        <input type="text" id="position" name="position" pattern="[A-Za-z\s\- ]{7,}" title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters.">
       </div>
 
       <div class="email-line">
@@ -64,5 +85,12 @@
     </div>
   </form>
 
+  <footer>
+    <p>Lazio, Italy 666-666-666 laziochamber.com</p>
+    <a href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c">Lazio, Italy</a>
+    <p>Parker Hatch | WDD 230 | 2023 | Last updated: <span id="lastupdated"></span></p>
+  </footer>
+
 </body>
+
 </html>
