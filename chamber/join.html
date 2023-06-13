@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Form</title>
-  <link rel="stylesheet" href="./styles/form.css">
-  <script src="./scripts/forms.js" defer></script>
-  <link rel="icon" href="./images/favicon-16x16.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="./styles/small.css">
-  <link rel="stylesheet" href="./styles/medium.css">
-  <link rel="stylesheet" href="./styles/large.css">
-  <link rel="stylesheet" href="./styles/base.css">    
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+    <script src="./scripts/forms.js" defer></script>
+    <link rel="icon" href="./images/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
 
-
-<body>
-
-  <header>  
-    <div class="logoText">
-        <img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo">      
-      <h1> Lazio Chamber of Commerce</h1>
-    </div>
+  <body>
+    <header>
+      <div class="logoText">
+        <img
+          src="./images/LazioLogo.png"
+          alt="The Lazio Chamber of Commerce Logo"
+          class="logo"
+        />
+        <h1>Lazio Chamber of Commerce</h1>
+      </div>
       <div class="icon_grid">
-        <a href="https://www.facebook.com/home" id="facebook_button"><img src="./images/facebookicon.png" alt="facebook icon"></a>
-        <a href="https://twitter.com/" id="twitter_button"><img src="./images/twittericon.png" alt="twitter icon"></a>
-    </div>
-    
-  </header>
-
-  <form action="./thankyou.html" method="get">
-    <h1>Membership Form</h1>
-    <div class="input-grid">
-
-      <div class="f-name">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <a href="https://www.facebook.com/home" id="facebook_button"
+          ><img src="./images/facebookicon.png" alt="facebook icon"
+        /></a>
+        <a href="https://twitter.com/" id="twitter_button"
+          ><img src="./images/twittericon.png" alt="twitter icon"
+        /></a>
       </div>
+    </header>
 
-      <div class="l-name">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+    <form action="./thankyou.html" method="get">
+      <h1>Membership Form</h1>
+      <div class="input-grid">
+        <div class="f-name">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+
+        <div class="l-name">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+
+        <div class="b-title">
+          <label for="position">Business Position Title:</label>
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[A-Za-z\s\- ]{7,}"
+            title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters."
+          />
+        </div>
+
+        <div class="email-line">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@example.com"
+          />
+        </div>
+
+        <div class="phone-number">
+          <label for="phone">Cell Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="b-name">
+          <label for="businessName">Business Name:</label>
+          <input type="text" id="businessName" name="businessName" required />
+        </div>
+
+        <div class="member-level">
+          <label for="membershipLevel">Membership Level:</label>
+          <select id="membershipLevel" name="membershipLevel">
+            <option value="np">*Choose a membership*</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </div>
+
+        <div class="b-description">
+          <label for="businessDescription">Business Description:</label>
+          <textarea
+            id="businessDescription"
+            name="businessDescription"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <input type="hidden" id="formDateTime" name="todaysdate" value="" />
+        <div class="submit-button">
+          <input type="submit" value="Submit" class="Thebutton" />
+        </div>
       </div>
+    </form>
 
-      <div class="b-title">
-        <label for="position">Business Position Title:</label>
-        <input type="text" id="position" name="position" pattern="[A-Za-z\s\- ]{7,}" title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters.">
-      </div>
-
-      <div class="email-line">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="example@example.com">
-      </div>
-
-      <div class="phone-number">
-        <label for="phone">Cell Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-
-      <div class="b-name">
-        <label for="businessName">Business Name:</label>
-        <input type="text" id="businessName" name="businessName" required>
-      </div>
-
-      <div class="member-level">
-        <label for="membershipLevel">Membership Level:</label>
-        <select id="membershipLevel" name="membershipLevel">
-          <option value="np">*Choose a membership*</option>
-          <option value="bronze">Bronze Membership</option>
-          <option value="silver">Silver Membership</option>
-          <option value="gold">Gold Membership</option>
-        </select>
-      </div>
-
-      <div class="b-description">
-        <label for="businessDescription">Business Description:</label>
-        <textarea id="businessDescription" name="businessDescription" rows="4"></textarea>
-      </div>
-
-      <input type="hidden" id="formDateTime" name="formDateTime" value="">
-      <div class="submit-button">
-      <input type="submit" value="Submit" class="Thebutton">
-      </div>
-    </div>
-  </form>
-
-  <footer>
-    <p>Lazio, Italy 666-666-666 laziochamber.com</p>
-    <a href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c">Lazio, Italy</a>
-    <p>Parker Hatch | WDD 230 | 2023 | Last updated: <span id="lastupdated"></span></p>
-  </footer>
-
-</body>
-
+    <footer>
+      <p>Lazio, Italy 666-666-666 laziochamber.com</p>
+      <a
+        href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c"
+        >Lazio, Italy</a
+      >
+      <p>
+        Parker Hatch | WDD 230 | 2023 | Last updated:
+        <span id="lastupdated"></span>
+      </p>
+    </footer>
+  </body>
 </html>
