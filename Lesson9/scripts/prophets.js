@@ -1,4 +1,4 @@
-const url = "./Data/prophets.json";
+const url = "./Data_prophets/prophets.json";
 // const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 
 // COMPARE THIS TO THE VERSION FOUND IN THE W09 Activity: Working with JSON data and the Fetch API module
