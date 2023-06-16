@@ -1,5 +1,5 @@
-// const url = "./Data/prophets.json";
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+const url = "./Data/prophets.json";
+// const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 
 // COMPARE THIS TO THE VERSION FOUND IN THE W09 Activity: Working with JSON data and the Fetch API module
 // Using the innerHTML version is a little less Javascript intensive.
@@ -35,20 +35,20 @@ getProphetData();
 
 // This demonstrates another way to handle the fetch response using THEN instead of ASYNC/AWAIT
 
-function getProphetDataWithThen() {
-  fetch(url)
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        console.error("There was an error loading the data.");
-        const cards = document.querySelector("div.cards");
-        cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
-      }
-    })
-    .then((data) => {
-      displayProphets(data.prophets);
-    });
-}
+// function getProphetDataWithThen() {
+//   fetch(url)
+//     .then((response) => {
+//       if (response.ok) {
+//         return response.json();
+//       } else {
+//         console.error("There was an error loading the data.");
+//         const cards = document.querySelector("div.cards");
+//         cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+//       }
+//     })
+//     .then((data) => {
+//       displayProphets(data.prophets);
+//     });
+// }
 
 // getProphetDataWithThen();
