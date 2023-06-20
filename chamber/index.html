@@ -1,81 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Page for the Lazio Chamber of Commerce Site">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home Page for the Lazio Chamber of Commerce Site"
+    />
     <title>Lazio Chamber of Commerce - Home</title>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
-    <link rel="icon" href="./images/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/small.css">
-    <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/large.css">
-    <link rel="stylesheet" href="./styles/base.css">    
-</head>
-<body>
-    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
-    <header>  
-        <div class="logoText">
-            <img src="./images/LazioLogo.png" alt="The Lazio Chamber of Commerce Logo" class="logo">      
-         <h1> Lazio Chamber of Commerce</h1>
-        </div>
-         <div class="icon_grid">
-            <a href="https://www.facebook.com/home" id="facebook_button"><img src="./images/facebookicon.png" alt="facebook icon"></a>
-            <a href="https://twitter.com/" id="twitter_button"><img src="./images/twittericon.png" alt="twitter icon"></a>
-        </div>
-        
+    <link rel="icon" href="./images/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
+  <body>
+    <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+    </div>
+    <header>
+      <div class="logoText">
+        <img
+          src="./images/LazioLogo.png"
+          alt="The Lazio Chamber of Commerce Logo"
+          class="logo"
+        />
+        <h1>Lazio Chamber of Commerce</h1>
+      </div>
+      <div class="icon_grid">
+        <a href="https://www.facebook.com/home" id="facebook_button"
+          ><img src="./images/facebookicon.png" alt="facebook icon"
+        /></a>
+        <a href="https://twitter.com/" id="twitter_button"
+          ><img src="./images/twittericon.png" alt="twitter icon"
+        /></a>
+      </div>
     </header>
     <h2 id="currentdate"></h2>
     <nav>
-        <a id="menu" href="#"></a>
-        <ul id="navbar" class="navigation">
-            <li class="home_button1"><a href="index.html">Discover</a></li>
-            <li class="home_button2"><a href="index.html">Directory</a></li>
-            <li class="home_button3"><a href="index.html">Join</a></li>
-            <li class="home_button4"><a href="index.html">Contact</a></li>
-        </ul>
-    </nav>    
+      <a id="menu" href="#"></a>
+      <ul id="navbar" class="navigation">
+        <li class="home_button1"><a href="index.html">Discover</a></li>
+        <li class="home_button2"><a href="index.html">Directory</a></li>
+        <li class="home_button3"><a href="index.html">Join</a></li>
+        <li class="home_button4"><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-        <div class="grid-container">
-            <div class="grid-item1">Event
-                <p>Come make a custom pizza at Linguini's!</p>
-                <img src="./images/Italian_Pizza.jpg" alt="Pizza picture">   
+      <div class="grid-container">
+        <div class="grid-item1">
+          Event
+          <p>Come make a custom pizza at Linguini's!</p>
+          <img src="./images/Italian_Pizza.jpg" alt="Pizza picture" />
+        </div>
+        <div class="grid-item2">
+          <h3>Welcome to Lazio</h3>
+          <p>Land of the artichoke!</p>
+          <img src="./images/mountains.webp" alt="Monte Cassino picture" />
+          <button>Join</button>
+        </div>
+        <div class="grid-item3">
+          <div class="spotlight-grid-container">
+            <div class="spot-grid-1">
+              Spaghetti Making<img
+                src="./images/Spaghetti-Sauce-Recipe-6.jpg"
+                alt="Spaghetti picture"
+              />
             </div>
-            <div class="grid-item2"><h3>Welcome to Lazio</h3>
-                <p>Land of the artichoke!</p>
-                <img src="./images/mountains.webp" alt="Monte Cassino picture">
-                <button>Join</button>
+            <div class="spot-grid-2">
+              Roman Ruin Tour<img
+                src="./images/1000x1000.webp"
+                alt="Spaghetti picture"
+              />
             </div>
-            <div class="grid-item3">
-                <div class="spotlight-grid-container">
-                    <div class="spot-grid-1">Spaghetti Making<img src="./images/Spaghetti-Sauce-Recipe-6.jpg" alt="Spaghetti picture"></div>
-                    <div class="spot-grid-2">Roman Ruin Tour<img src="./images/1000x1000.webp" alt="Spaghetti picture"></div>
-                    <div class="spot-grid-3">Wine tasting <img src="./images/l-intro-1660923092.jpg" alt="Wine picture"></div>
-                </div>
-            </div>  
-            <div class="grid-item4">
-                <h3>Weather</h3>
-                <p>temperature: <span id="temperature"></span> Celcius</p>
-                <p>windspeed: <span id="windspeed"></span> km/hr</p>
-                <p>Windchill: <span id="windchill"></span></p>
-            </div>
-            <div class="grid-item5">Join
-                <button id="connected_button">Get Connected!</button>
-            </div>
-            <div class="grid-item6">News Release: Dance Festival in Rome
-                <img src="./images/dance_festival.jpg" alt="Wine picture">
-                
-
+            <div class="spot-grid-3">
+              Wine tasting
+              <img src="./images/l-intro-1660923092.jpg" alt="Wine picture" />
             </div>
           </div>
+        </div>
+        <div class="grid-item4">
+          <h3>Weather</h3>
+          <p>temperature: <span id="temperature"></span> Celcius</p>
+          <p>windspeed: <span id="windspeed"></span> km/hr</p>
+          <p>Windchill: <span id="windchill"></span></p>
+        </div>
+        <div class="grid-item5">
+          Join
+          <button id="connected_button">Get Connected!</button>
+        </div>
+        <div class="grid-item6">
+          News Release: Dance Festival in Rome
+          <img src="./images/dance_festival.jpg" alt="Wine picture" />
+        </div>
+      </div>
     </main>
     <footer>
-        <p>Lazio, Italy 666-666-666 laziochamber.com</p>
-        <a href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c">Lazio, Italy</a>
-        <p>Parker Hatch | WDD 230 | 2023 | Last updated: <span id="lastupdated"></span></p>
+      <p>Lazio, Italy 666-666-666 laziochamber.com</p>
+      <a
+        href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c"
+        >Lazio, Italy</a
+      >
+      <p>
+        Parker Hatch | WDD 230 | 2023 | Last updated:
+        <span id="lastupdated"></span>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
