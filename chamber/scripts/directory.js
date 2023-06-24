@@ -42,7 +42,7 @@ const displayMembers = (members) => {
     <img src="${member.imageURL}" alt="member image">
     <p>${member.street}</p>
     <p>${member.city}, ${member.state} ${member.zip}</p>
-    <p><a href="${member.websiteURL}">Website</a></p>`;
+    <p><a href="${member.websiteURL}" id="directory_links">${member.website}</a></p>`;
     cards.appendChild(card);
   }); // end of forEach loop
   

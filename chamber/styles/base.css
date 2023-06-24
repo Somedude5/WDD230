@@ -246,6 +246,7 @@ a:link {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    text-align: center;
     
 }
 
@@ -277,7 +278,12 @@ a:link {
     background-color: #ffffff4a;
     padding: 5px 10px;
     border-radius: 5px;
+    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.demo_info{
+    text-align: center;
 }
 
 /* directory styling */
@@ -335,7 +341,13 @@ a:link {
     background-color: #40879b9e;
     /* padding: 1rem; */
     margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.directory-cards section:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.822);
+  }
+
 
 .directory-cards .gold-member{
     box-shadow: 10px 5px 5px goldenrod;
@@ -370,3 +382,8 @@ a:link {
 }
 
 
+
+#directory_links:hover {
+    color: rgba(255, 68, 0, 0.553);
+}
+  
