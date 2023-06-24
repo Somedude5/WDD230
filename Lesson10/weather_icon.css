@@ -6,3 +6,8 @@ section {
     text-align: center;
     background-color: rgb(187, 175, 158);
 }
+
+figcaption{
+    font-weight: bold;
+    font-style: italic;
+}
