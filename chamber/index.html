@@ -11,6 +11,7 @@
     <title>Lazio Chamber of Commerce - Home</title>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="./images/favicon-16x16.png" />
     <link
       rel="stylesheet"
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />
     <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./weather_icon.css">
   </head>
   <body>
     <div id="banner">
@@ -91,6 +93,13 @@
           <p>temperature: <span id="temperature"></span> Celcius</p>
           <p>windspeed: <span id="windspeed"></span> km/hr</p>
           <p>Windchill: <span id="windchill"></span></p>
+          <section>
+        <p>The current temperature in Lazio, Italy is <span id="current-temp"></span> &deg;F</p>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+        </section>
         </div>
         <div class="grid-item5">
           Join

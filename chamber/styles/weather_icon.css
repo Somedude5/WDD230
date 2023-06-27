@@ -1,0 +1,13 @@
+section {
+    border: 2px solid black;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgb(187, 175, 158);
+}
+
+figcaption{
+    font-weight: bold;
+    font-style: italic;
+}
