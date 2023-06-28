@@ -1,9 +1,10 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
+// const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const temperatureElement = document.querySelector("#temperature");
 const windspeedElement = document.querySelector("#windspeed");
+// const windchillElement = document.querySelector("#windchill");
 const windchillElement = document.querySelector("#windchill");
 
 
@@ -11,11 +12,24 @@ const lat = 41.467567
 const lon = 12.9896
 const appid = "d3598f177fbfd6f61c409046c36bba72"
 
-// const appid2 = "be32833d7239c63fb1ec02ebf74bf9fc"
+async function getWeather() {
+  try {
+    const response = await fetch(weatherurl);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // this is for testing the call
+      displayResults(data);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
 
 const weatherurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appid}&units=imperial`;
 
-function calculateWindchill(windspeed, temperature) {
+function calculateWindchill(temperature, windspeed) {
 
   let windchillValue = "N/A";
 
@@ -25,9 +39,10 @@ function calculateWindchill(windspeed, temperature) {
     windchillValue = `${Math.ceil(windchillamt)}`;
   }
 
-  temperatureElement.textContent = temperature;
+  temperatureElement.textContent = windspeed;
   windchillElement.textContent = windchillValue;
-  windspeedElement.textContent = windspeed;
+  // windchillElement.textContent = "N/A";
+  windspeedElement.textContent = temperature;
 }
 
 
@@ -35,7 +50,7 @@ function displayResults(weatherData) {
 
   // toFixed(0) rounds the temperature to the nearest whole number
 
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  temperatureElement.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
   // You can use @2x or @4x to make the icon bigger, or omit it for the standard size
 
@@ -56,19 +71,6 @@ function displayResults(weatherData) {
   
 }
 
-async function getWeather() {
-    try {
-      const response = await fetch(weatherurl);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data); // this is for testing the call
-        displayResults(data);
-      } else {
-          throw Error(await response.text());
-      }
-    } catch (error) {
-        console.log(error);
-    }
-}
+
   
 getWeather();

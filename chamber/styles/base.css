@@ -18,7 +18,7 @@ body {
 header,
 footer,
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 480px;
     margin: 0 auto;
     text-align: center;
@@ -215,6 +215,7 @@ a:link {
 
 .grid-item4 {
     font-size: 20px;
+    text-align: center;
 }
 
 .grid-item5 {
@@ -226,7 +227,7 @@ a:link {
 }
 
 .grid-container > div {
-    text-align: left;
+    /* text-align: left; */
     padding: 40px 5px;
     /* font-size: 30px; */
 }
