@@ -201,12 +201,25 @@ a:link {
 .grid-item1 {
     padding-left: 80px;
     font-size: 20px;
+    text-align: center;
 
 }
 
-.grid-item2 {
-   
 
+
+.grid-item2 {
+    background: linear-gradient(45deg, #5AB1BB, #4E6766);
+    
+}
+
+
+.grid-item2 h3 {
+    font-style: oblique;
+}
+
+.welcome_join{
+    display: block;
+    margin: auto;
 }
 
 .grid-item3 {
@@ -218,8 +231,23 @@ a:link {
     text-align: center;
 }
 
-.grid-item5 {
+.grid-item5.button.a {
+    color: black;
+}
 
+.Join_button{
+    color: #1E152A;
+    background-color: #999999;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.Join_button:visited{
+    color: #1E152A; 
 }
 
 .grid-item6 {
@@ -263,6 +291,7 @@ a:link {
 
 .gallery .description {
     flex: 1 1 100%;
+    border: 1px black solid;
 }
 
 /* CSS for hover effect */

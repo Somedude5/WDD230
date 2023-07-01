@@ -18,3 +18,8 @@
 
 // // Call the windchill function
 // calculateWindchill(5, 5);
+
+
+function redirectToWebsite() {
+    window.location.href = "join.html";
+}

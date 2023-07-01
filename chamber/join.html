@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membership Form</title>
     <link rel="stylesheet" href="./styles/form.css" />
+    <script src="./scripts/main.js" defer></script>
     <script src="./scripts/forms.js" defer></script>
     <link rel="icon" href="./images/favicon-16x16.png" />
     <link
@@ -50,74 +51,90 @@
       </ul>
     </nav>
 
-    <form action="./thankyou.html" method="get">
-      <h1>Membership Form</h1>
+    <form action="./thankyou.html" method="get" class="lazio_form">
+      <h1>Lazio Membership Form</h1>
       <div class="input-grid">
-        <div class="f-name">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required />
+        <div class="column_1">
+          <div class="f-name">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+
+          <div class="l-name">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+
+          <div class="phone-number">
+            <label for="phone">Cell Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="email-line">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@example.com"
+            />
+          </div>
+        </div>
+        <div class="column_2">
+          <div class="b-name">
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" name="businessName" required />
+          </div>
+
+          <div class="b-title">
+            <label for="position">Business Position Title:</label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              pattern="[A-Za-z\s\- ]{7,}"
+              title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters."
+            />
+          </div>
+
+          <div class="b-description">
+            <label for="businessDescription">Business Description:</label>
+            <textarea
+              id="businessDescription"
+              name="businessDescription"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+        <div class="column_3">
+
+          <div class="member-desc">
+            <h3>Membership Types</h3>
+            <h5 class="gold_member">Gold</h5>
+            <p class="member-desc-info">Unlock exclusive networking opportunities, access premium business resources, and gain visibility among industry leaders with our Gold membership.</p>
+            <h5 class="silver_member">Silver</h5>
+            <p class="member-desc-info">Enhance your business connections, tap into valuable educational resources, and enjoy discounted event participation with our Silver membership.</p>
+            <h5 class="bronze_member">Bronze</h5>
+            <p class="member-desc-info">Join a supportive business community, expand your professional network, and access essential resources at an affordable price with our Bronze membership.</p>
+          </div>
+
+          <div class="member-level">
+            <em><label for="membershipLevel">Membership Status:</label></em>
+            <select id="membershipLevel" name="membershipLevel">
+              <option value="np">*Choose a membership*</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+          </div>
         </div>
 
-        <div class="l-name">
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required />
-        </div>
 
-        <div class="b-title">
-          <label for="position">Business Position Title:</label>
-          <input
-            type="text"
-            id="position"
-            name="position"
-            pattern="[A-Za-z\s\- ]{7,}"
-            title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters."
-          />
-        </div>
-
-        <div class="email-line">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="example@example.com"
-          />
-        </div>
-
-        <div class="phone-number">
-          <label for="phone">Cell Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required />
-        </div>
-
-        <div class="b-name">
-          <label for="businessName">Business Name:</label>
-          <input type="text" id="businessName" name="businessName" required />
-        </div>
-
-        <div class="member-level">
-          <label for="membershipLevel">Membership Level:</label>
-          <select id="membershipLevel" name="membershipLevel">
-            <option value="np">*Choose a membership*</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-        </div>
-
-        <div class="b-description">
-          <label for="businessDescription">Business Description:</label>
-          <textarea
-            id="businessDescription"
-            name="businessDescription"
-            rows="4"
-          ></textarea>
-        </div>
-
-        <input type="hidden" id="formDateTime" name="todaysdate" value="" />
-        <div class="submit-button">
-          <input type="submit" value="Submit" class="Thebutton" />
-        </div>
+      </div>
+      <input type="hidden" id="formDateTime" name="todaysdate" value="" />
+      <div class="submit-button">
+        <input type="submit" value="Submit" class="Thebutton" />
       </div>
     </form>
 

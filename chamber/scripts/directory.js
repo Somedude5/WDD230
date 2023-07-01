@@ -38,6 +38,15 @@ const displayMembers = (members) => {
     if (member.membershipLevel == 'gold'){
       card.classList.add("gold-member")
     }
+    if (member.membershipLevel == 'silver'){
+      card.classList.add("silver-member")
+    }
+    if (member.membershipLevel == 'bronze'){
+      card.classList.add("bronze-member")
+    }
+    if (member.membershipLevel == 'subscribed'){
+      card.classList.add("subscribed-member")
+    }
     card.innerHTML = `<h2>${member.name}</h2>
     <img src="${member.imageURL}" alt="member image">
     <p>${member.street}</p>
