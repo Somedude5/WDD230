@@ -1,6 +1,6 @@
 
 // Lazy loading for images
-const images = document.querySelectorAll(".gallery image");
+const images = document.querySelectorAll(".gallery .image img");
 
 const other_options = {
 root: null,
@@ -21,6 +21,7 @@ const observer = new IntersectionObserver(handleIntersection, other_options);
 
 images.forEach((image) => {
 observer.observe(image);
+console.log("hi")
 });
 
 // Time Visited using Local Storage
