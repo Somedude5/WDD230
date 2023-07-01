@@ -272,11 +272,24 @@ a:link {
 
 /* CSS for gallery and image descriptions */
 .gallery {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     text-align: center;
+    max-width: 1200px;
     
+}
+
+.description{
+    background: linear-gradient(45deg, #5AB1BB, #4E6766);;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.demo_info {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .gallery .image {
