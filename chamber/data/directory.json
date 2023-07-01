@@ -25,7 +25,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business 2.png"
+            "imageURL": "./images/directory_images/business 2.png",
+            "membershipLevel":"gold"
         },
         {
             "name": "Gelateria Deliziosa",
@@ -38,7 +39,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business5.jpg"
+            "imageURL": "./images/directory_images/business5.jpg",
+            "membershipLevel":"bronze"
         },
         {
             "name": "Boutique Moda Bella",
@@ -51,7 +53,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business6.png"
+            "imageURL": "./images/directory_images/business6.png",
+            "membershipLevel":"gold"
         },
         {
             "name": "Osteria Rustica",
@@ -78,7 +81,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business3.jpg"
+            "imageURL": "./images/directory_images/business3.jpg",
+            "membershipLevel":"silver"
         },
         {
             "name": "Pizzeria Amore Mio",
@@ -91,7 +95,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business7.jpg"
+            "imageURL": "./images/directory_images/business7.jpg",
+            "membershipLevel":"bronze"
         },
         {
             "name": "Caffetteria Bella Vista",
@@ -104,7 +109,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business9.jpg"
+            "imageURL": "./images/directory_images/business9.jpg",
+            "membershipLevel":"bronze"
         },
         {
             "name": "Enotecca Vino Divino",
@@ -117,7 +123,8 @@
             "membership-level": "bronze",
             "country": "Italy",
             "adCopy": "",
-            "imageURL": "./images/directory_images/business8.jpg"
+            "imageURL": "./images/directory_images/business8.jpg",
+            "membershipLevel":"silver"
         }
     ]
     

@@ -222,8 +222,8 @@ a:link {
     margin: auto;
 }
 
-.grid-item3 {
-
+.grid-item3 p{
+    font-size: large;
 }
 
 .grid-item4 {
@@ -380,6 +380,12 @@ a:link {
 
 .directory-cards .gold-member{
     box-shadow: 10px 5px 5px goldenrod;
+}
+.directory-cards .silver-member{
+    box-shadow: 10px 5px 5px silver;
+}
+.directory-cards .bronze-member{
+    box-shadow: 10px 5px 5px rgb(177, 51, 5);
 }
 
 /* List View */
