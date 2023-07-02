@@ -435,3 +435,7 @@ a:link {
     color: rgba(255, 68, 0, 0.553);
 }
   
+.google_maps_image{
+    height: 50px;
+    width: 50px;
+}
