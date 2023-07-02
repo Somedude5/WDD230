@@ -165,11 +165,15 @@ nav ul li.active a{
 /* buttons for Twitter and Facebook */
 
 #twitter_button {
-    scale: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 20px;
 }
 
 #facebook_button {
-    scale: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 20px;
 }
 
 .icon_grid {
