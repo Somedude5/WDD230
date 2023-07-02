@@ -250,9 +250,9 @@ a:link {
     color: #1E152A; 
 }
 
-.grid-item6 {
+/* .grid-item6 {
 
-}
+} */
 
 .grid-container > div {
     /* text-align: left; */
@@ -343,9 +343,6 @@ a:link {
     display: block;
 }
 
-.directory-card{
-    /* display: flex; */
-}
 
 .directory-main{
     width: 100%;

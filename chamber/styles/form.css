@@ -45,20 +45,11 @@ h1 {
     width: 200px;
     padding: 10px;
 }
-.column_2{
-    /* height: flex; */
-    /* border: 1px solid black; */
-}
 
 .column_2 div {
     display: block;
     width: 200px;
     padding: 10px;
-}
-
-.column_3{
-    /* height: flex; */
-    /* border: 1px solid black; */
 }
 
 .column_3 h3 {
