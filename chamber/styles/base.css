@@ -167,13 +167,14 @@ nav ul li.active a{
 #twitter_button {
     height: 24px;
     width: 24px;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
 }
 
 #facebook_button {
     height: 24px;
     width: 24px;
-    padding: 20px;
+    padding-left: 30px;
 }
 
 .icon_grid {
