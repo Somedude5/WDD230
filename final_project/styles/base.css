@@ -1,13 +1,26 @@
-
-
 /* ------ Body CSS ------ */
 body {
   font-family: "Pathway Gothic One", sans-serif;
   min-height: 00vh;
   font-size: 20px;
+  background-color: rgba(255, 228, 196, 0.74);
 }
 
 /* ------ Header CSS ------ */
+.header {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header, h3 {
+    background-color: #3387a8;
+}
 
 .logo {
   height: 200px;
@@ -15,16 +28,73 @@ body {
 
 /* ------ Main CSS ------ */
 
+header,
+footer,
 main {
-  max-width: 1200px;
-  min-width: 480px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px;
+    max-width: 1200px;
+    min-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Home Navbar */
+
+nav {
+    background-color: var(--menu-bg-color);
+    max-width: 832px; 
+    min-width: 480px;
+    margin: 0 auto;
+    row-gap: 1px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block: 0px;
+    width: 100%;  
+}
+
+nav ul li {
+    /* border: 1px solid black; */
+    width: 100%;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    
+
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;    
+    color: white;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover{
+    background-color: rgb(146, 207, 53);
+    color: black;
 }
 
 /* ------ Footer CSS ------ */
 
+footer {
+    background-color: var(--header-bg-color);
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    color: white;
+    background-color: #3387a8;
+}
 
+.footer-logo{
+    height: 100px;
+}
 
-
+.maps-logo{
+    height: 50px;
+}
