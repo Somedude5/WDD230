@@ -1,0 +1,30 @@
+
+
+/* ------ Body CSS ------ */
+body {
+  font-family: "Pathway Gothic One", sans-serif;
+  min-height: 00vh;
+  font-size: 20px;
+}
+
+/* ------ Header CSS ------ */
+
+.logo {
+  height: 200px;
+}
+
+/* ------ Main CSS ------ */
+
+main {
+  max-width: 1200px;
+  min-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ------ Footer CSS ------ */
+
+
+
+
