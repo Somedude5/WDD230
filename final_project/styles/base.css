@@ -22,6 +22,9 @@ body {
     background-color: #3387a8;
 }
 
+.social-media-icons{
+}
+
 .logo {
   height: 200px;
 }
@@ -36,6 +39,25 @@ main {
     margin: 0 auto;
     text-align: center;
     padding: 10px;
+}
+
+/* ------ Smoothie Pic and Order Button ------ */
+
+
+.order-container{
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.container.loaded {
+    opacity: 0;
 }
 
 /* Home Navbar */

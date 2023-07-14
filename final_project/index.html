@@ -8,7 +8,7 @@
       content="Home Page for the Bountiful Foods website"
     />
     <title>Bountiful Foods - Home</title>
-    <script src="" defer></script>
+    <script src="scripts/Lazy-load.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -17,11 +17,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
   </head>
+  
   <body>
     <header class="header">
-      <h1>Bountiful Foods</h1>
+      <div>
+        <h1>Bountiful Foods</h1>
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/home" id="facebook_button"
+            ><img
+              src="./images/social-media-imgs/facebookicon.png"
+              alt="facebook icon"
+          /></a>
+          <a href="https://twitter.com/" id="twitter_button"
+            ><img
+              src="./images/social-media-imgs/twittericon.png"
+              alt="twitter icon"
+          /></a>
+        </div>
+      </div>
       <div class="logo-and-text">
-        <img src="images/Bountiful-logo.png" alt="Logo image" class="logo">
+        <img src="images/Bountiful-logo.png" alt="Logo image" class="logo" />
         <h3>Home grown fruit, even better taste!</h3>
       </div>
       <h2 id="currentdate"></h2>
@@ -35,10 +50,16 @@
       </nav>
     </header>
 
+
+
     <main>
-      <H2>Fresh Smoothies, made to order!</H2>
-      <button>ORDER NOW!</button>
+      <div class="order-container" style="background-image: url('images/placeholder_image.webp');" loading="lazy">
+        <h2>Fresh Smoothies, made to order!</h2>
+        <button>ORDER NOW!</button>
+      </div>
     </main>
+
+    
 
     <footer>
       <p>Lazio, Italy 666-666-666</p>
@@ -48,11 +69,11 @@
           alt="Website Logo"
           class="footer-logo"
         />
-        DiscoverLazio.com</a
+        BountifulFoods.com</a
       >
       <a
-        href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c"
-        >Lazio, Italy
+        href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
+        >Bountiful, Utah
         <img
           src="./images/maps_image.webp"
           alt="google maps icon"
