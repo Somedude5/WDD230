@@ -61,6 +61,7 @@ main {
 .social-media-container{
 grid-column: 1;
 border: 1px solid black;
+padding: 10px;
 }
 
 /* ------ Weather Widget & container------ */
@@ -68,6 +69,7 @@ border: 1px solid black;
 .weather-widget-container{
 grid-column: 3;
 border: 1px solid black;
+padding: 10px;
 }
 
 /* ------ Smoothie Pic and Order Button ------ */
@@ -144,6 +146,13 @@ nav ul li a:hover{
     color: black;
 }
 
+a:hover{
+    color: rgb(146, 207, 53);
+}
+
+a{
+    color: black;
+}
 
 /* ----- Form CSS ------ */
 
