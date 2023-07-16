@@ -56,6 +56,20 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.action-button{
+    background-color: rgba(255, 37, 37, 0.651);
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    margin-top: 250px;
+}
+.action-button:hover{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+    background-color: rgba(145, 207, 53, 0.699);
+    cursor: pointer;
+    font-style: italic;
+}
+
 /* ------ Social Media Links & container ------ */
 
 .social-media-container{
@@ -144,6 +158,7 @@ nav a {
 nav ul li a:hover{
     background-color: rgb(146, 207, 53);
     color: black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
 }
 
 a:hover{

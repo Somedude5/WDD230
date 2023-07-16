@@ -8,9 +8,9 @@
       content="Home Page for the Bountiful Foods website"
     />
     <title>Bountiful Foods - Home</title>
-    <script src="./scripts/main.js" defer></script>
-    <script src="scripts/Lazy-load.js" defer></script>
+    <script src="./scripts/Lazy-load.js" defer></script>
     <script src="./scripts/weatherapi.js" defer></script>
+    <script src="./scripts/hamburger-menu.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -67,8 +67,12 @@
           loading="lazy"
         >
           <h3>Fresh Smoothies, made to order!</h3>
-          <button onclick="window.location.href = 'http://127.0.0.1:5500/final_project/fresh.html';">Order Now!</button>
-
+          <button
+            class="action-button"
+            onclick="window.location.href = 'http://127.0.0.1:5500/final_project/fresh.html';"
+          >
+            Order Now!
+          </button>
         </div>
         <div class="weather-widget-container">
           <h3>Weather</h3>
@@ -82,6 +86,7 @@
           </section>
           <p>windspeed: <span id="temperature"></span> km/hr</p>
           <p>Windchill: <span id="windchill"></span></p>
+          <p>Humidity: <span id="humidity"></span>hello</p>
         </div>
       </div>
     </main>
@@ -99,7 +104,7 @@
         >
         <a
           class="logo-text"
-          href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
+          href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215847,-117.3290015,13z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"
           >Find us on Google
           <img
             src="./images/maps_image.webp"

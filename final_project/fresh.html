@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Fresh page for the Bountiful Foods website"
+      content="Home Page for the Bountiful Foods website"
     />
-    <title>Bountiful Foods - Fresh</title>
-    <script src="" defer></script>
+    <title>Bountiful Foods - Home</title>
+    <script src="./scripts/main.js" defer></script>
+    <script src="scripts/Lazy-load.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -17,16 +19,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
   </head>
+
   <body>
     <header class="header">
-      <h1>Bountiful Foods</h1>
       <div class="logo-and-text">
         <img src="images/Bountiful-logo.png" alt="Logo image" class="logo" />
-        <h3>Home grown fruit, even better taste!</h3>
       </div>
-      <h2 id="currentdate"></h2>
+      <div>
+        <h1>Bountiful Foods</h1>
+        <h4>Home grown fruit, even better taste!</h4>
+      </div>
       <nav>
-        <a id="menu" href="#"></a>
         <ul id="navbar" class="navigation">
           <li class="home_button1"><a href="index.html">Home</a></li>
           <li class="home_button2"><a href="fresh.html">Fresh</a></li>
@@ -141,22 +144,25 @@
 
     <footer>
       <p>Carlsbad, California 562-666-9999</p>
-      <a href="index.html"
-        ><img
-          src="./images/Bountiful-logo.png"
-          alt="Website Logo"
-          class="footer-logo"
-        />
-        BountifulFoods.com</a
-      >
-      <a
-        href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
-        >Find us on Google
-        <img
-          src="./images/maps_image.webp"
-          alt="google maps icon"
-          class="maps-logo"
-      /></a>
+      <div class="footer-links">
+        <a class="logo-text" href="index.html"
+          ><img
+            src="./images/Bountiful-logo.png"
+            alt="Website Logo"
+            class="footer-logo"
+          />
+          BountifulFoods.com</a
+        >
+        <a
+          class="logo-text"
+          href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215847,-117.3290015,13z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"
+          >Find us on Google
+          <img
+            src="./images/maps_image.webp"
+            alt="google maps icon"
+            class="maps-logo"
+        /></a>
+      </div>
       <p>
         Parker Hatch | WDD 230 | 2023 | Last updated:
         <span id="lastupdated"></span>

@@ -7,9 +7,6 @@ const currentDateElement = document.querySelector("#currentdate");
 currentDateElement.textContent = currentDate;
 
 
-const lastupdated = document.querySelector("#lastupdated");
-lastupdated.textContent = document.lastModified;
-
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
 
