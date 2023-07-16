@@ -18,6 +18,14 @@ body {
     justify-content: space-between;
 }
 
+header.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-right: 60px;
+}
+
+
+
 .header, h3 {
     background-color: #3387a8;
 }
@@ -34,17 +42,37 @@ body {
 header,
 footer,
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     min-width: 480px;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
 }
 
+/* ------ Main Grid Container ------ */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* ------ Social Media Links & container ------ */
+
+.social-media-container{
+grid-column: 1;
+}
+
+/* ------ Weather Widget & container------ */
+
+.weather-widget-container{
+grid-column: 3;
+}
+
 /* ------ Smoothie Pic and Order Button ------ */
 
 
 .order-container{
+    grid-column: 2;
     width: 800px;
     height: 800px;
     text-align: center;
@@ -100,6 +128,116 @@ nav a {
 nav ul li a:hover{
     background-color: rgb(146, 207, 53);
     color: black;
+}
+
+
+/* ----- Form CSS ------ */
+
+body {
+    /*font-family: "Open Sans", sans-serif;*/
+
+    /*font-family: 'Italiana', serif;*/
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    /* min-height: 00vh; */
+    font-size: 20px;
+
+    
+}
+
+
+.lazio_form {
+    margin-top: 1rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 1100px;
+    min-width: 500px;
+    
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    /* border: 1px solid black; */
+}
+
+.column_1{
+    /* height: flex; */
+    /* border: 1px solid black; */
+    display: block;
+    justify-content: center;
+}
+.column_1 div {
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+.column_2 div {
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+.column_3 h3 {
+    width: 300px;
+}
+
+.column_3 div {
+    display: block;
+    padding: 10px;
+}
+
+.member-desc-info {
+    font-size: 25px;
+    width: 100%;
+}
+
+.member-desc h5  {
+    margin: 0;
+}
+
+.member-level{
+    display: block;
+    width: 200px;
+}
+
+.gold_member {
+    color: gold;
+    background: linear-gradient(45deg, white, gold);
+}
+
+.silver_member {
+    color: silver;
+    background: linear-gradient(45deg, white, silver);
+}
+
+.bronze_member {
+    color: rgb(177, 51, 5);
+    background: linear-gradient(45deg, white, rgb(177, 51, 5));
+}
+
+.submit-button{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* ------------------------------------------------ */
+
+.Thebutton{
+    /* width: 200px; */
+    height: 100px;
+    font-size: 75px;
 }
 
 /* ------ Footer CSS ------ */

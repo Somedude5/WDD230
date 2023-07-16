@@ -9,6 +9,7 @@
     />
     <title>Bountiful Foods - Home</title>
     <script src="scripts/Lazy-load.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -17,31 +18,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
   </head>
-  
+
   <body>
     <header class="header">
-      <div>
-        <h1>Bountiful Foods</h1>
-        <div class="social-media-icons">
-          <a href="https://www.facebook.com/home" id="facebook_button"
-            ><img
-              src="./images/social-media-imgs/facebookicon.png"
-              alt="facebook icon"
-          /></a>
-          <a href="https://twitter.com/" id="twitter_button"
-            ><img
-              src="./images/social-media-imgs/twittericon.png"
-              alt="twitter icon"
-          /></a>
-        </div>
-      </div>
       <div class="logo-and-text">
         <img src="images/Bountiful-logo.png" alt="Logo image" class="logo" />
+      </div>
+      <div>
+        <h1>Bountiful Foods</h1>
         <h3>Home grown fruit, even better taste!</h3>
       </div>
-      <h2 id="currentdate"></h2>
       <nav>
-        <a id="menu" href="#"></a>
         <ul id="navbar" class="navigation">
           <li class="home_button1"><a href="index.html">Home</a></li>
           <li class="home_button2"><a href="fresh.html">Fresh</a></li>
@@ -50,19 +37,49 @@
       </nav>
     </header>
 
-
-
     <main>
-      <div class="order-container" style="background-image: url('images/placeholder_image.webp');" loading="lazy">
-        <h2>Fresh Smoothies, made to order!</h2>
-        <button>ORDER NOW!</button>
+      <div class="main-grid">
+        <div class="social-media-container">
+          <h3>Social Media</h3>
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/home" id="facebook_button"
+              ><img
+                src="./images/social-media-imgs/facebookicon.png"
+                alt="facebook icon"
+            /></a>
+            <a href="https://twitter.com/" id="twitter_button"
+              ><img
+                src="./images/social-media-imgs/twittericon.png"
+                alt="twitter icon"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="order-container"
+          style="background-image: url('images/placeholder_image.webp')"
+          loading="lazy"
+        >
+          <h3>Fresh Smoothies, made to order!</h3>
+          <button>ORDER NOW!</button>
+        </div>
+        <div class="weather-widget-container">
+          <h3>Current Weather</h3>
+          <h5>Carlsbad, California</h5>
+          <section>
+            <i><span id="windspeed"></span> &deg;F</i>
+            <figure>
+              <img src="" alt="" id="weather-icon" />
+              <figcaption></figcaption>
+            </figure>
+          </section>
+          <p>windspeed: <span id="temperature"></span> km/hr</p>
+          <p>Windchill: <span id="windchill"></span></p>
+        </div>
       </div>
     </main>
 
-    
-
     <footer>
-      <p>Lazio, Italy 666-666-666</p>
+      <p>Carlsbad, California 562-666-9999</p>
       <a href="index.html"
         ><img
           src="./images/Bountiful-logo.png"
@@ -73,7 +90,7 @@
       >
       <a
         href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
-        >Bountiful, Utah
+        >Find us on Google
         <img
           src="./images/maps_image.webp"
           alt="google maps icon"

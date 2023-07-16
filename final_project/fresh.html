@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Fresh page for the Bountiful Foods website"
-        />
-        <title>Bountiful Foods - Fresh</title>
-        <script src="" defer></script>
-        <link rel="icon" href="./images/redketchup/favicon.ico" />
-        <link rel="stylesheet" href="styles/base.css" />
-        <link rel="stylesheet" href="styles/small.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        />
-      </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fresh page for the Bountiful Foods website"
+    />
+    <title>Bountiful Foods - Fresh</title>
+    <script src="" defer></script>
+    <link rel="icon" href="./images/redketchup/favicon.ico" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
   <body>
     <header class="header">
       <h1>Bountiful Foods</h1>
@@ -36,22 +36,122 @@
     </header>
 
     <main>
-        <h1>Fresh Page</h1>
+      <h1>Fresh Page</h1>
+      <form action="./thankyou.html" method="get" class="lazio_form">
+        <h1>Lazio Membership Form</h1>
+        <div class="input-grid">
+          <div class="column_1">
+            <div class="f-name">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div class="l-name">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+
+            <div class="phone-number">
+              <label for="phone">Cell Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="email-line">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@example.com"
+              />
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="b-name">
+              <label for="businessName">Business Name:</label>
+              <input
+                type="text"
+                id="businessName"
+                name="businessName"
+                required
+              />
+            </div>
+
+            <div class="b-title">
+              <label for="position">Business Position Title:</label>
+              <input
+                type="text"
+                id="position"
+                name="position"
+                pattern="[A-Za-z\s\- ]{7,}"
+                title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters."
+              />
+            </div>
+
+            <div class="b-description">
+              <label for="businessDescription">Business Description:</label>
+              <textarea
+                id="businessDescription"
+                name="businessDescription"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+          <div class="column_3">
+            <div class="member-desc">
+              <h3>Membership Types</h3>
+              <h5 class="gold_member">Gold</h5>
+              <p class="member-desc-info">
+                Unlock exclusive networking opportunities, access premium
+                business resources, and gain visibility among industry leaders
+                with our Gold membership.
+              </p>
+              <h5 class="silver_member">Silver</h5>
+              <p class="member-desc-info">
+                Enhance your business connections, tap into valuable educational
+                resources, and enjoy discounted event participation with our
+                Silver membership.
+              </p>
+              <h5 class="bronze_member">Bronze</h5>
+              <p class="member-desc-info">
+                Join a supportive business community, expand your professional
+                network, and access essential resources at an affordable price
+                with our Bronze membership.
+              </p>
+            </div>
+
+            <div class="member-level">
+              <em><label for="membershipLevel">Membership Status:</label></em>
+              <select id="membershipLevel" name="membershipLevel">
+                <option value="np">*Choose a membership*</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" id="formDateTime" name="todaysdate" value="" />
+        <div class="submit-button">
+          <input type="submit" value="Join Now!" class="Thebutton" />
+        </div>
+      </form>
     </main>
 
     <footer>
-      <p>Lazio, Italy 666-666-666</p>
+      <p>Carlsbad, California 562-666-9999</p>
       <a href="index.html"
         ><img
           src="./images/Bountiful-logo.png"
           alt="Website Logo"
           class="footer-logo"
         />
-        DiscoverLazio.com</a
+        BountifulFoods.com</a
       >
       <a
-        href="https://www.google.com/maps/place/Lazio,+Italy/@41.8117292,12.7385133,8z/data=!3m1!4b1!4m6!3m5!1s0x1324eee6353a6535:0x6f4a9064f1a38529!8m2!3d41.6552418!4d12.989615!16zL20vMDRxX2c"
-        >Lazio, Italy
+        href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
+        >Find us on Google
         <img
           src="./images/maps_image.webp"
           alt="google maps icon"
