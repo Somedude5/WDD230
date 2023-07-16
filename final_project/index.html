@@ -8,6 +8,7 @@
       content="Home Page for the Bountiful Foods website"
     />
     <title>Bountiful Foods - Home</title>
+    <script src="./scripts/main.js" defer></script>
     <script src="scripts/Lazy-load.js" defer></script>
     <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
@@ -26,7 +27,7 @@
       </div>
       <div>
         <h1>Bountiful Foods</h1>
-        <h3>Home grown fruit, even better taste!</h3>
+        <h4>Home grown fruit, even better taste!</h4>
       </div>
       <nav>
         <ul id="navbar" class="navigation">
@@ -42,16 +43,22 @@
         <div class="social-media-container">
           <h3>Social Media</h3>
           <div class="social-media-icons">
-            <a href="https://www.facebook.com/home" id="facebook_button"
-              ><img
-                src="./images/social-media-imgs/facebookicon.png"
-                alt="facebook icon"
-            /></a>
-            <a href="https://twitter.com/" id="twitter_button"
-              ><img
-                src="./images/social-media-imgs/twittericon.png"
-                alt="twitter icon"
-            /></a>
+            <div class="facebook-div">
+              <a href="https://www.facebook.com/home" id="facebook_button"
+                ><img
+                  src="./images/social-media-imgs/facebookicon.png"
+                  alt="facebook icon"
+                />Find us on Facebook!</a
+              >
+            </div>
+            <div class="twitter-div">
+              <a href="https://twitter.com/" id="twitter_button"
+                ><img
+                  src="./images/social-media-imgs/twittericon.png"
+                  alt="twitter icon"
+                />Find us on Twitter!</a
+              >
+            </div>
           </div>
         </div>
         <div
@@ -60,7 +67,8 @@
           loading="lazy"
         >
           <h3>Fresh Smoothies, made to order!</h3>
-          <button>ORDER NOW!</button>
+          <button onclick="window.location.href = 'http://127.0.0.1:5500/final_project/fresh.html';">Order Now!</button>
+
         </div>
         <div class="weather-widget-container">
           <h3>Current Weather</h3>
@@ -80,22 +88,25 @@
 
     <footer>
       <p>Carlsbad, California 562-666-9999</p>
-      <a href="index.html"
-        ><img
-          src="./images/Bountiful-logo.png"
-          alt="Website Logo"
-          class="footer-logo"
-        />
-        BountifulFoods.com</a
-      >
-      <a
-        href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
-        >Find us on Google
-        <img
-          src="./images/maps_image.webp"
-          alt="google maps icon"
-          class="maps-logo"
-      /></a>
+      <div class="footer-links">
+        <a class="logo-text" href="index.html"
+          ><img
+            src="./images/Bountiful-logo.png"
+            alt="Website Logo"
+            class="footer-logo"
+          />
+          BountifulFoods.com</a
+        >
+        <a
+          class="logo-text"
+          href="https://www.google.com/maps/d/viewer?msa=0&mid=1kKZY37ALCbvQ8PF--C8H3uBpVrw&ll=40.89731217548253%2C-111.850999&z=14"
+          >Find us on Google
+          <img
+            src="./images/maps_image.webp"
+            alt="google maps icon"
+            class="maps-logo"
+        /></a>
+      </div>
       <p>
         Parker Hatch | WDD 230 | 2023 | Last updated:
         <span id="lastupdated"></span>

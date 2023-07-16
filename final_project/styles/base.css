@@ -21,10 +21,8 @@ body {
 header.header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding-right: 60px;
+    padding-right: 100px;
 }
-
-
 
 .header, h3 {
     background-color: #3387a8;
@@ -35,6 +33,7 @@ header.header{
 
 .logo {
   height: 200px;
+  padding-left: 90px;
 }
 
 /* ------ Main CSS ------ */
@@ -42,11 +41,12 @@ header.header{
 header,
 footer,
 main {
-    max-width: 1400px;
+    max-width: 1200px;
     min-width: 480px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* ------ Main Grid Container ------ */
@@ -60,12 +60,14 @@ main {
 
 .social-media-container{
 grid-column: 1;
+border: 1px solid black;
 }
 
 /* ------ Weather Widget & container------ */
 
 .weather-widget-container{
 grid-column: 3;
+border: 1px solid black;
 }
 
 /* ------ Smoothie Pic and Order Button ------ */
@@ -84,18 +86,30 @@ grid-column: 3;
     transition: opacity .5s ease-in-out;
 }
 
+li.home_button1, li.home_button2, li.home_button3 {
+    margin: 1px;
+    background-color: rgb(39, 204, 113);
+}
+
+.order-container, h3 {
+    margin-top: 0px;
+    background-color: rgb(39, 204, 113);
+}
+
 .container.loaded {
     opacity: 0;
 }
 
-/* Home Navbar */
+/* -------- Home Navbar -------- */
 
 nav {
+    display: flex;
     background-color: var(--menu-bg-color);
     max-width: 832px; 
     min-width: 480px;
     margin: 0 auto;
     row-gap: 1px;
+    align-items: center;
 }
 
 nav ul {
@@ -251,10 +265,36 @@ footer {
     background-color: #3387a8;
 }
 
+footer p{
+   margin: 5px;
+}
+
 .footer-logo{
     height: 100px;
 }
 
 .maps-logo{
     height: 50px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-text{
+display: flex;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+img.footer-logo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img.maps-logo {
+    padding-left: 10px;
+    padding-right: 10px;
 }
