@@ -70,61 +70,39 @@
               />
             </div>
           </div>
-          <div class="column_2">
-            <div class="b-name">
-              <label for="businessName">Business Name:</label>
-              <input
-                type="text"
-                id="businessName"
-                name="businessName"
-                required
-              />
-            </div>
-
-            <div class="b-title">
-              <label for="position">Business Position Title:</label>
-              <input
-                type="text"
-                id="position"
-                name="position"
-                pattern="[A-Za-z\s\- ]{7,}"
-                title="Must contain only letters, hyphens, and spaces with a minimum of 7 characters."
-              />
-            </div>
-
-            <div class="b-description">
-              <label for="businessDescription">Business Description:</label>
-              <textarea
-                id="businessDescription"
-                name="businessDescription"
-                rows="4"
-              ></textarea>
-            </div>
-          </div>
           <div class="column_3">
             <div class="member-desc">
-              <h3>Membership Types</h3>
-              <h5 class="gold_member">Gold</h5>
+              <h4>Fruit Drink Choices</h4>
+              <h5 class="gold_member">Fruit Choice 1</h5>
               <p class="member-desc-info">
-                Unlock exclusive networking opportunities, access premium
-                business resources, and gain visibility among industry leaders
-                with our Gold membership.
+                <select id="membershipLevel" name="membershipLevel">
+                  <option value="np">*Choose a membership*</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="silver">Silver</option>
+                  <option value="gold">Gold</option>
+                </select>
               </p>
-              <h5 class="silver_member">Silver</h5>
+              <h5 class="silver_member">Fruit Choice 2</h5>
               <p class="member-desc-info">
-                Enhance your business connections, tap into valuable educational
-                resources, and enjoy discounted event participation with our
-                Silver membership.
+                <select id="membershipLevel" name="membershipLevel">
+                  <option value="np">*Choose a membership*</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="silver">Silver</option>
+                  <option value="gold">Gold</option>
+                </select>
               </p>
-              <h5 class="bronze_member">Bronze</h5>
+              <h5 class="bronze_member">Fruit Choice 3</h5>
               <p class="member-desc-info">
-                Join a supportive business community, expand your professional
-                network, and access essential resources at an affordable price
-                with our Bronze membership.
+                <select id="membershipLevel" name="membershipLevel">
+                  <option value="np">*Choose a membership*</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="silver">Silver</option>
+                  <option value="gold">Gold</option>
+                </select>
               </p>
             </div>
 
-            <div class="member-level">
+            <!-- <div class="member-level">
               <em><label for="membershipLevel">Membership Status:</label></em>
               <select id="membershipLevel" name="membershipLevel">
                 <option value="np">*Choose a membership*</option>
@@ -132,6 +110,14 @@
                 <option value="silver">Silver</option>
                 <option value="gold">Gold</option>
               </select>
+            </div> -->
+            <label for="businessDescription">Additional Instructions:</label>
+            <div class="b-description">
+              <textarea
+                id="businessDescription"
+                name="businessDescription"
+                rows="4"
+              ></textarea>
             </div>
           </div>
         </div>
