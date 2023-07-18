@@ -41,10 +41,21 @@
 
     <main>
       <h1>Thank You!</h1>
-      <p>Your order has been placed successfully. Here are the details:</p>
+      <h3>Your order has been placed successfully. Here are the details:</h3>
       <div class="thankyou-grid">
-        <div id="orderDetails"></div>
+        <div id="orderDetails-formatted">
+          <h2>Order Details</h2>
+          <p>Name: <span id="firstName"></span></p>
+          <p>Email: <span id="email"></span></p>
+          <p>Phone Number: <span id="phone"></span></p>
+          <p>Fruit Choice 1: <span id="fruit1"></span></p>
+          <p>Fruit Choice 2: <span id="fruit2"></span></p>
+          <p>Fruit Choice 3: <span id="fruit3"></span></p>
+          <p>Additional Instructions: <span id="instructions"></span></p>
+        </div>
+
         <div class="ordercalories">
+          <h2>Nutrition</h2>
           <p>total carbohydrates: <span id="carbs"></span></p>
           <p>total protein: <span id="prot"></span></p>
           <p>total fat: <span id="fat"></span></p>
@@ -56,6 +67,34 @@
       <p>
         Payment will be recieved upon pick up, expect about a 5 minute wait.
       </p>
+      <p>call or text us at 562-666-9999 for questions.</p>
+
+      <div class="thankyou-grid">
+        <div>
+          <div class="social-media-container">
+            <h3>Howd we do?</h3>
+            <p>give us a rating and receive a free coupon!</p>
+            <div class="social-media-icons">
+              <div class="facebook-div">
+                <a href="https://www.facebook.com/home" id="facebook_button"
+                  ><img
+                    src="./images/social-media-imgs/facebookicon.png"
+                    alt="facebook icon"
+                  />#BountifulFruits</a
+                >
+              </div>
+              <div class="twitter-div">
+                <a href="https://twitter.com/" id="twitter_button"
+                  ><img
+                    src="./images/social-media-imgs/twittericon.png"
+                    alt="twitter icon"
+                  />@BountifulFruits</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>

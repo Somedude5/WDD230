@@ -1,33 +1,31 @@
-// Function to get the total number of submissions from localStorage
-function getTotalSubmissions() {
-    const submissions = localStorage.getItem('specialtyDrinkSubmissions');
-    return submissions ? parseInt(submissions) : 0;
+// Function to get the total number of orders from localStorage
+function getTotalOrders() {
+    const orders = localStorage.getItem('orders');
+    return orders ? parseInt(orders) : 0;
 }
 
-// Function to update and display the total number of submissions
-function updateTotalSubmissions() {
-    const totalSubmissionsElement = document.querySelector('#total-submissions');
-    const totalSubmissionsParagraph = document.querySelector('#drinks-paragraph');
+// Function to update and display the total number of orders
+function updateTotalOrders() {
+    const totalOrdersElement = document.querySelector('#total-orders');
+    const totalOrdersParagraph = document.querySelector('#drinks-paragraph');
 
-    const totalSubmissions = getTotalSubmissions();
+    const totalOrders = getTotalOrders();
 
-    if (totalSubmissions > 0) {
-        totalSubmissionsElement.textContent = totalSubmissions;
+    if (totalOrders > 0) {
+        totalOrdersElement.textContent = totalOrders;
+    } else {
+        totalOrdersElement.textContent = totalOrders;
+        totalOrdersParagraph.style.display = 'none';
     }
-    else{
-        totalSubmissionsElement.textContent = totalSubmissions;
-        totalSubmissionsParagraph.style.display = 'none';
-    }
-    
 }
 
-// Function to increment the total number of submissions
-function incrementTotalSubmissions() {
-    const totalSubmissions = getTotalSubmissions();
-    const newTotalSubmissions = totalSubmissions + 1;
-    localStorage.setItem('specialtyDrinkSubmissions', newTotalSubmissions);
-    updateTotalSubmissions();
+// Function to increment the total number of orders
+function incrementTotalOrders() {
+    const totalOrders = getTotalOrders();
+    const newTotalOrders = totalOrders + 1;
+    localStorage.setItem('orders', newTotalOrders);
+    updateTotalOrders();
 }
 
-// Call the function to update and display the total number of submissions on page load
-updateTotalSubmissions();
+// Call the function to update and display the total number of orders on page load
+updateTotalOrders();

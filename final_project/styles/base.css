@@ -8,27 +8,28 @@ body {
 
 /* ------ Header CSS ------ */
 .header {
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid black;
-    padding: 1rem;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-header.header{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-right: 100px;
+header.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding-right: 100px;
 }
 
-.header, h3 {
-    background-color: #3387a8;
+.header,
+h3 {
+  background-color: #3387a8;
 }
 
-.social-media-icons{
+.social-media-icons {
 }
 
 .logo {
@@ -41,329 +42,374 @@ header.header{
 header,
 footer,
 main {
-    max-width: 1200px;
-    min-width: 480px;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+  max-width: 1200px;
+  min-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* ------ Main Grid Container ------ */
 
 .main-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-.action-button{
-    background-color: rgba(255, 37, 37, 0.651);
-    width: 300px;
-    height: 100px;
-    font-size: 40px;
-    margin-top: 250px;
+.action-button {
+  background-color: rgba(255, 37, 37, 0.651);
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  margin-top: 250px;
 }
-.action-button:hover{
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
-    background-color: rgba(145, 207, 53, 0.699);
-    cursor: pointer;
-    font-style: italic;
+
+button#clear-button {
+  background-color: #3387a8;
+  margin: auto;
+  align-items: center;
+}
+
+button#clear-button:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgba(145, 207, 53, 0.699);
+  cursor: pointer;
+  font-style: italic;
+}
+
+.action-button:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgba(145, 207, 53, 0.699);
+  cursor: pointer;
+  font-style: italic;
 }
 
 /* ------ Social Media Links & container ------ */
 
-.social-media-container{
-grid-column: 1;
-border: 1px solid black;
-padding: 10px;
+.social-media-container {
+  grid-column: 1;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 /* ------ Weather Widget & container------ */
 
-.weather-widget-container{
-grid-column: 3;
-border: 1px solid black;
-padding: 10px;
+.weather-widget-container {
+  grid-column: 3;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 /* ------ Smoothie Pic and Order Button ------ */
 
-
-.order-container{
-    grid-column: 2;
-    width: 800px;
-    height: 800px;
-    text-align: center;
-    margin: 0 auto;
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    transition: opacity .5s ease-in-out;
+.order-container {
+  grid-column: 2;
+  width: 800px;
+  height: 800px;
+  text-align: center;
+  margin: 0 auto;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
-li.home_button1, li.home_button2, li.home_button3 {
-    margin: 1px;
-    background-color: rgb(39, 204, 113);
+li.home_button1,
+li.home_button2,
+li.home_button3 {
+  margin: 1px;
+  background-color: rgb(39, 204, 113);
 }
 
-.order-container, h3 {
-    margin-top: 0px;
-    background-color: rgb(39, 204, 113);
+.order-container,
+h3 {
+  margin-top: 0px;
+  background-color: rgb(39, 204, 113);
 }
 
 .container.loaded {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* -------- Home Navbar -------- */
 
 nav {
-    display: flex;
-    background-color: var(--menu-bg-color);
-    max-width: 832px; 
-    min-width: 480px;
-    margin: 0 auto;
-    row-gap: 1px;
-    align-items: center;
+  display: flex;
+  background-color: var(--menu-bg-color);
+  max-width: 832px;
+  min-width: 480px;
+  margin: 0 auto;
+  row-gap: 1px;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-inline-start: 0px;
-    margin-block: 0px;
-    width: 100%;  
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block: 0px;
+  width: 100%;
 }
 
 nav ul li {
-    /* border: 1px solid black; */
-    width: 100%;
-    color: white;
-    text-align: center;
-    border: 1px solid black;
-    
-
+  /* border: 1px solid black; */
+  width: 100%;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
 }
 
 nav a {
-    display: block;
-    padding: 1rem;
-    text-decoration: none;    
-    color: white;
-    font-size: 1.25rem;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
 }
 
-nav ul li a:hover{
-    background-color: rgb(146, 207, 53);
-    color: black;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+nav ul li a:hover {
+  background-color: rgb(146, 207, 53);
+  color: black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-a:hover{
-    color: rgb(146, 207, 53);
+a:hover {
+  color: rgb(146, 207, 53);
 }
 
-a{
-    color: black;
+a {
+  color: black;
 }
 
 /* ----- Form CSS ------ */
 
 body {
-    /*font-family: "Open Sans", sans-serif;*/
+  /*font-family: "Open Sans", sans-serif;*/
 
-    /*font-family: 'Italiana', serif;*/
+  /*font-family: 'Italiana', serif;*/
 
-    font-family: 'Pathway Gothic One', sans-serif;
-    /* min-height: 00vh; */
-    font-size: 20px;
-
-    
+  font-family: "Pathway Gothic One", sans-serif;
+  /* min-height: 00vh; */
+  font-size: 20px;
 }
 
-
 .fruit_form {
-    margin-top: 1rem;
-    margin: 0 auto;
-    border: 1px solid black;
-    max-width: 900px;
-    min-width: 500px;
-    background-color: rgba(255, 37, 37, 0.473);
-    
+  margin-top: 1rem;
+  margin: 0 auto;
+  border: 1px solid black;
+  max-width: 900px;
+  min-width: 500px;
+  background-color: rgba(255, 37, 37, 0.473);
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
-    /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  /* border: 1px solid black; */
 }
 
-div.column_1{
-    display: block;
-    justify-content: left;
-    align-items: center;
-    width: 200px;
-    margin: auto;
-    
+div.column_1 {
+  display: block;
+  justify-content: left;
+  align-items: center;
+  width: 200px;
+  margin: auto;
 }
 
-.form-group{
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    
+.form-group {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 .column_1 div {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 .column_2 div {
-    display: block;
-    width: 200px;
-    padding: 10px;
+  display: block;
+  width: 200px;
+  padding: 10px;
 }
 
 .column_3 h3 {
-    width: 300px;
+  width: 300px;
 }
 
 .column_3 div {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 .member-desc-info {
-    font-size: 25px;
-    width: 100%;
+  font-size: 25px;
+  width: 100%;
 }
 
-.member-desc h5  {
-    margin: 0;
+.member-desc h5 {
+  margin: 0;
 }
 
-.member-level{
-    display: block;
-    width: 200px;
+.member-level {
+  display: block;
+  width: 200px;
 }
 
 .gold_member {
-    color: gold;
-    background: linear-gradient(45deg, white, gold);
+  color: gold;
+  background: linear-gradient(45deg, white, gold);
 }
 
 .silver_member {
-    color: silver;
-    background: linear-gradient(45deg, white, silver);
+  color: silver;
+  background: linear-gradient(45deg, white, silver);
 }
 
 .bronze_member {
-    color: rgb(177, 51, 5);
-    background: linear-gradient(45deg, white, rgb(177, 51, 5));
+  color: rgb(177, 51, 5);
+  background: linear-gradient(45deg, white, rgb(177, 51, 5));
 }
 
-.submit-button{
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.submit-button {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 /* ------------------------------------------------ */
 
-.Thebutton{
-    background-color: rgba(255, 37, 37, 0.651);
-    width: 300px;
-    height: 100px;
-    font-size: 40px;
-    margin-top: 35px;
-
+.Thebutton {
+  background-color: rgba(255, 37, 37, 0.651);
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  margin-top: 35px;
 }
 
-.Thebutton:hover{
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
-    background-color: rgba(145, 207, 53, 0.699);
-    cursor: pointer;
-    font-style: italic;
+.Thebutton:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgba(145, 207, 53, 0.699);
+  cursor: pointer;
+  font-style: italic;
 }
 
-
-.action-button{
-    background-color: rgba(255, 37, 37, 0.651);
-    width: 300px;
-    height: 100px;
-    font-size: 40px;
-    margin-top: 250px;
+.action-button {
+  background-color: rgba(255, 37, 37, 0.651);
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  margin-top: 250px;
 }
-.action-button:hover{
-
+.action-button:hover {
 }
 
 /* ------ thank you CSS ------ */
 
-.thankyou-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
-    /* border: 1px solid black; */
+.thankyou-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  /* border: 1px solid black; */
 }
 
-div#orderDetails{
-
+div#orderDetails-formatted {
+  border: 1px solid black;
+  padding: 10px;
 }
 
+div.ordercalories {
+  border: 1px solid black;
+  padding: 10px;
+}
 
+/* ------ CSS for about us card styling ------ */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
 
 /* ------ Footer CSS ------ */
 
 footer {
-    background-color: var(--header-bg-color);
-    text-align: center;
-    border: 1px solid black;
-    padding: 1rem;
-    color: white;
-    background-color: #3387a8;
+  background-color: var(--header-bg-color);
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+  color: white;
+  background-color: #3387a8;
+  padding: 50px;
 }
 
-footer p{
-   margin: 5px;
+footer p {
+  margin: 5px;
 }
 
-.footer-logo{
-    height: 100px;
+.footer-logo {
+  height: 100px;
 }
 
-.maps-logo{
-    height: 50px;
+.maps-logo {
+  height: 50px;
 }
 
-.footer-links{
-    display: flex;
-    justify-content: center;
+.footer-links {
+  display: flex;
+  justify-content: center;
 }
 
-.logo-text{
-display: flex;
-align-items: center;
-padding-left: 10px;
-padding-right: 10px;
+.logo-text {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.logo-text {
+  margin: auto;
+  justify-content: center;
 }
 
 img.footer-logo {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 img.maps-logo {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+img#card-img {
+  width: 300px;
+  border-radius: 15%; /* Makes the image round */
+  box-shadow: 0px 2px 5px rgba(3, 3, 3, 2); /* Adds a shadow effect */
+}
+
+div.card {
+    background-image: url('./images/paper-texture.webp');
+    background-repeat: repeat;
+  }
+  

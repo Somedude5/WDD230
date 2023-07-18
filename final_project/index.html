@@ -8,6 +8,7 @@
       content="Home Page for the Bountiful Foods website"
     />
     <title>Bountiful Foods - Home</title>
+    <script src="./scripts/fruit-api.js" defer></script>
     <script src="./scripts/Lazy-load.js" defer></script>
     <script src="./scripts/weatherapi.js" defer></script>
     <script src="./scripts/hamburger-menu.js" defer></script>
@@ -76,7 +77,9 @@
             Order Now!
           </button>
 
-          <p id="drinks-paragraph">Total Drinks Submitted: <span id="total-submissions"></span></p>
+          <strong><p id="drinks-paragraph">Total Drinks Submitted: <span id="total-orders"></span></p></strong>
+          <button id="clear-button" style="display: none;">Clear Orders</button>
+
 
 
         </div>

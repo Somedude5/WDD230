@@ -24,6 +24,38 @@ function populateSelects(fruitOptions) {
     });
 }
 
+// Function to get the total number of orders from localStorage
+function getTotalOrders() {
+    const orders = localStorage.getItem('orders');
+    return orders ? parseInt(orders) : 0;
+}
+
+// Function to update and display the total number of orders
+function updateTotalOrders() {
+    const totalOrdersElement = document.querySelector('#total-orders');
+    const totalOrdersParagraph = document.querySelector('#drinks-paragraph');
+    const clearButton = document.querySelector('#clear-button');
+
+    const totalOrders = getTotalOrders();
+    totalOrdersElement.textContent = totalOrders;
+
+    if (totalOrders > 0) {
+        totalOrdersParagraph.style.display = 'block';
+        clearButton.style.display = 'block';
+    } else {
+        totalOrdersParagraph.style.display = 'none';
+        clearButton.style.display = 'none';
+    }
+}
+
+// Function to increment the total number of orders
+function incrementTotalOrders() {
+    const totalOrders = getTotalOrders();
+    const newTotalOrders = totalOrders + 1;
+    localStorage.setItem('orders', newTotalOrders);
+    updateTotalOrders();
+}
+
 // Handle form submission
 function handleFormSubmit(event) {
     event.preventDefault();
@@ -45,7 +77,7 @@ function handleFormSubmit(event) {
     console.log('Fruit 1:', fruit1.value);
     console.log('Fruit 2:', fruit2.value);
     console.log('Fruit 3:', fruit3.value);
-    console.log('Instructions:', instructions.value)
+    console.log('Instructions:', instructions.value);
 
     const order = {
         firstName: firstName.value,
@@ -55,35 +87,31 @@ function handleFormSubmit(event) {
         fruit2: fruit2.value,
         fruit3: fruit3.value,
         instructions: instructions.value
-
     };
+
     localStorage.setItem('order', JSON.stringify(order));
 
     event.target.reset();
 
     window.location.href = 'thankyou.html';
+    incrementTotalOrders();
 }
 
+// Call the function to update and display the total number of orders on page load
+window.addEventListener('DOMContentLoaded', updateTotalOrders);
+
+// Attach form submission handler
 window.addEventListener('DOMContentLoaded', async () => {
     const fruitOptions = await fetchFruitOptions();
     populateSelects(fruitOptions);
-
-    // Display order details from local storage
-    const order = JSON.parse(localStorage.getItem('order'));
-    if (order) {
-        const orderDetails = document.querySelector('#orderDetails');
-        const listItems = Object.entries(order).map(([key, value]) => {
-            return `<li>${key}: ${value}</li>`;
-        });
-        orderDetails.innerHTML = `<ul>${listItems.join('')}</ul>`;
-    } else {
-        const orderDetails = document.querySelector('#orderDetails');
-        orderDetails.innerHTML = '<p>No order details found.</p>';
-    }
-});
-
-// Attach form submission handler
-window.addEventListener('DOMContentLoaded', () => {
     const fruitForm = document.querySelector('.fruitForm');
     fruitForm.addEventListener('submit', handleFormSubmit);
+});
+
+// Event listener for the clear button
+const clearButton = document.querySelector('#clear-button');
+clearButton.addEventListener('click', () => {
+    localStorage.setItem('orders', '0');
+    updateTotalOrders();
+    clearButton.style.display = 'none';
 });
