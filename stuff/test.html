@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+  <h1>Form Example</h1>
+
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get the entered name
+      var name = document.getElementById('name').value;
+
+      // Store the name in local storage
+      localStorage.setItem('name', name);
+
+      // Redirect to the thank you page
+      window.location.href = 'thankyou.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You Page</title>
+</head>
+<body>
+  <h1>Thank You!</h1>
+
+  <p>Thank you for submitting your name.</p>
+
+  <p>Your name: <span id="name"></span></p>
+
+  <script>
+    // Retrieve the name from local storage
+    var name = localStorage.getItem('name');
+
+    // Display the name on the page
+    document.getElementById('name').textContent = name;
+  </script>
+</body>
+</html>

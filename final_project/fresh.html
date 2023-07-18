@@ -10,8 +10,6 @@
     <title>Bountiful Foods - Home</title>
     <script src="./scripts/fruit-api.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="scripts/Lazy-load.js" defer></script>
-    <script src="./scripts/weatherapi.js" defer></script>
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -40,44 +38,52 @@
     </header>
 
     <main>
-      
-      <form action="./thankyou.html" method="get" class="fruit_form" id="fruitForm">
+      <form
+        action="./thankyou.html"
+        method="get"
+        class="fruitForm"
+        id="fruitForm"
+      >
         <h1>Fruit Drinks</h1>
         <div class="input-grid">
           <div class="column_1">
-            <form id="fruitForm">
-              <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required placeholder="example@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required>
-              </div>
-              <div class="form-group">
-                <label for="fruit1">Fruit 1:</label>
-                <select id="fruit1" required></select>
-              </div>
-              <div class="form-group">
-                <label for="fruit2">Fruit 2:</label>
-                <select id="fruit2" required></select>
-              </div>
-              <div class="form-group">
-                <label for="fruit3">Fruit 3:</label>
-                <select id="fruit3" required></select>
-              </div>
-              <div class="form-group">
-                <label for="businessDescription">Additional Instructions:</label>
-                  <textarea
-                    id="businessDescription"
-                    name="businessDescription"
-                    rows="4"
-                  ></textarea>
-              </div>
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="fruit1">Fruit 1:</label>
+              <select id="fruit1" required></select>
+            </div>
+            <div class="form-group">
+              <label for="fruit2">Fruit 2:</label>
+              <select id="fruit2" required></select>
+            </div>
+            <div class="form-group">
+              <label for="fruit3">Fruit 3:</label>
+              <select id="fruit3" required></select>
+            </div>
+            <div class="form-group">
+              <label for="businessDescription">Additional Instructions:</label>
+              <textarea
+                id="businessDescription"
+                name="businessDescription"
+                rows="4"
+              ></textarea>
+            </div>
           </div>
         </div>
         <input type="hidden" id="formDateTime" name="todaysdate" value="" />
