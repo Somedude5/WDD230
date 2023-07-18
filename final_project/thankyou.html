@@ -11,7 +11,6 @@
     <script src="./scripts/fruit-api.js" defer></script>
     <script src="./scripts/thankyou.js" defer></script>
     <script src="./scripts/drinks.js" defer></script>
-    
 
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
@@ -43,9 +42,20 @@
     <main>
       <h1>Thank You!</h1>
       <p>Your order has been placed successfully. Here are the details:</p>
-  
-      <div id="orderDetails"></div>
-  
+      <div class="thankyou-grid">
+        <div id="orderDetails"></div>
+        <div class="ordercalories">
+          <p>total carbohydrates: <span id="carbs"></span></p>
+          <p>total protein: <span id="prot"></span></p>
+          <p>total fat: <span id="fat"></span></p>
+          <p>total sugar: <span id="sug"></span></p>
+          <p>total calories: <span id="cals"></span></p>
+        </div>
+      </div>
+
+      <p>
+        Payment will be recieved upon pick up, expect about a 5 minute wait.
+      </p>
     </main>
 
     <footer>

@@ -308,6 +308,20 @@ div.column_1{
 
 }
 
+/* ------ thank you CSS ------ */
+
+.thankyou-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    /* border: 1px solid black; */
+}
+
+div#orderDetails{
+
+}
+
+
 
 /* ------ Footer CSS ------ */
 

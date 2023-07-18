@@ -35,7 +35,8 @@ function handleFormSubmit(event) {
         phone,
         fruit1,
         fruit2,
-        fruit3
+        fruit3,
+        instructions
     } = formElements;
 
     console.log('First Name:', firstName.value);
@@ -44,6 +45,7 @@ function handleFormSubmit(event) {
     console.log('Fruit 1:', fruit1.value);
     console.log('Fruit 2:', fruit2.value);
     console.log('Fruit 3:', fruit3.value);
+    console.log('Instructions:', instructions.value)
 
     const order = {
         firstName: firstName.value,
@@ -51,7 +53,9 @@ function handleFormSubmit(event) {
         phone: phone.value,
         fruit1: fruit1.value,
         fruit2: fruit2.value,
-        fruit3: fruit3.value
+        fruit3: fruit3.value,
+        instructions: instructions.value
+
     };
     localStorage.setItem('order', JSON.stringify(order));
 
