@@ -8,10 +8,13 @@
       content="Thank you page after a customer orders a drink."
     />
     <title>Bountiful Foods - Receipt</title>
+    <script src="./scripts/thankyou.js" defer></script>
+    <script src="./scripts/fruit-api.js" defer></script>
     <script src="./scripts/Lazy-load.js" defer></script>
     <script src="./scripts/weatherapi.js" defer></script>
     <script src="./scripts/hamburger-menu.js" defer></script>
     <script src="./scripts/drinks.js" defer></script>
+    
 
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
@@ -41,15 +44,12 @@
     </header>
 
     <main>
-      <h1>Thank you!</h1>
-
-      <p>choice 1: <span></span></p>
-
-      <p>choice 2: <span></span></p>
-
-      <p>choice 3: <span></span></p>
-
-      <p>Additional Preparation Instructions: <span></span></p>
+      <h1>Thank You!</h1>
+      <p>Your order has been placed successfully. Here are the details:</p>
+  
+      <div id="orderDetails"></div>
+  
+      <script src="thankyou.js"></script>
     </main>
 
     <footer>

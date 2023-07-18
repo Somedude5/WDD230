@@ -70,10 +70,6 @@ main {
     font-style: italic;
 }
 
-.drinks-paragraph {
-
-}
-
 /* ------ Social Media Links & container ------ */
 
 .social-media-container{
@@ -188,13 +184,13 @@ body {
 }
 
 
-.lazio_form {
+.fruit_form {
     margin-top: 1rem;
     margin: 0 auto;
     border: 1px solid black;
-    max-width: 1100px;
+    max-width: 900px;
     min-width: 500px;
-    
+    background-color: rgba(255, 37, 37, 0.473);
     
 }
 
@@ -211,15 +207,23 @@ h1 {
     /* border: 1px solid black; */
 }
 
-.column_1{
-    /* height: flex; */
-    /* border: 1px solid black; */
+div.column_1{
     display: block;
+    justify-content: left;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    
+}
+
+.form-group{
+    align-items: center;
     justify-content: center;
+    text-align: left;
+    
 }
 .column_1 div {
     display: block;
-    width: 200px;
     padding: 10px;
 }
 
@@ -277,10 +281,33 @@ h1 {
 /* ------------------------------------------------ */
 
 .Thebutton{
-    /* width: 200px; */
+    background-color: rgba(255, 37, 37, 0.651);
+    width: 300px;
     height: 100px;
-    font-size: 75px;
+    font-size: 40px;
+    margin-top: 35px;
+
 }
+
+.Thebutton:hover{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+    background-color: rgba(145, 207, 53, 0.699);
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+.action-button{
+    background-color: rgba(255, 37, 37, 0.651);
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    margin-top: 250px;
+}
+.action-button:hover{
+
+}
+
 
 /* ------ Footer CSS ------ */
 
