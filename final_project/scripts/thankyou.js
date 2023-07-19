@@ -17,7 +17,7 @@ if (order) {
 // Fetch fruit data from "data/fruits.json"
 async function fetchFruitData() {
   try {
-    const response = await fetch('./data/fruits.json');
+    const response = await fetch('./data/fruits copy.json');
     const fruitData = await response.json();
     console.log('Fruit data:', fruitData);
     return fruitData;
