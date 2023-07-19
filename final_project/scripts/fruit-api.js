@@ -1,7 +1,7 @@
 // Fetch available fruit options from the web service
 async function fetchFruitOptions() {
     try {
-        const fruitOptionsResponse = await fetch('./data/fruits.JSON');
+        const fruitOptionsResponse = await fetch('data/fruits.json');
         const fruitOptions = await fruitOptionsResponse.json();
         console.log('Fruit options:', fruitOptions);
         return fruitOptions;
