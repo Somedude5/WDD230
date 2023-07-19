@@ -1,5 +1,6 @@
 // Retrieve the selected fruit choices from local storage
 const order = JSON.parse(localStorage.getItem('order'));
+console.log("githubIO SUCKS")
 
 if (order) {
   document.getElementById('firstName').textContent = order.firstName;
