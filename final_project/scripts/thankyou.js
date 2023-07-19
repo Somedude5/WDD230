@@ -9,8 +9,10 @@ if (order) {
   document.getElementById('fruit2').textContent = order.fruit2;
   document.getElementById('fruit3').textContent = order.fruit3;
   document.getElementById('instructions').textContent = order.instructions;
+  
+  const orderTime = new Date(order.orderTime);
+  document.getElementById('orderTime').textContent = orderTime.toLocaleString(); // Display the order time
 }
-
 // Fetch fruit data from "data/fruits.json"
 async function fetchFruitData() {
   try {

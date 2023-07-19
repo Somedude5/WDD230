@@ -79,6 +79,8 @@ function handleFormSubmit(event) {
     console.log('Fruit 3:', fruit3.value);
     console.log('Instructions:', instructions.value);
 
+    const orderTime = new Date(); // Get the current time
+
     const order = {
         firstName: firstName.value,
         email: email.value,
@@ -86,7 +88,8 @@ function handleFormSubmit(event) {
         fruit1: fruit1.value,
         fruit2: fruit2.value,
         fruit3: fruit3.value,
-        instructions: instructions.value
+        instructions: instructions.value,
+        orderTime: orderTime.toISOString() // Convert time to ISO string format so the date shows up
     };
 
     localStorage.setItem('order', JSON.stringify(order));
@@ -97,7 +100,7 @@ function handleFormSubmit(event) {
     incrementTotalOrders();
 }
 
-// Call the function to update and display the total number of orders on page load
+// Call the function to update and display the total number of orders on page load so button can get rid of them
 window.addEventListener('DOMContentLoaded', updateTotalOrders);
 
 // Attach form submission handler

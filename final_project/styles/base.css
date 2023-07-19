@@ -1,6 +1,6 @@
 /* ------ Body CSS ------ */
 body {
-  font-family: "Pathway Gothic One", sans-serif;
+  font-family: 'Andika', sans-serif;
   min-height: 00vh;
   font-size: 20px;
   background-color: rgba(255, 228, 196, 0.74);
@@ -215,11 +215,6 @@ a {
 
 /* ----- Form CSS ------ */
 
-body {
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 20px;
-}
-
 .fruit_form {
   margin-top: 1rem;
   margin: 0 auto;
@@ -367,7 +362,7 @@ div.ordercalories {
 
 footer {
   background-color: var(--header-bg-color);
-  text-align: center;
+  text-align: left;
   border: 1px solid black;
   padding: 1rem;
   color: white;
@@ -389,7 +384,7 @@ footer p {
 
 .footer-links {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .logo-text {
@@ -398,6 +393,13 @@ footer p {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* .logo-text2 {
+  display: block;
+  text-align: left;
+
+} */
+
 
 a.logo-text {
   margin: auto;
@@ -480,4 +482,16 @@ div.card {
       padding: 5px;
     }
   }
+}
+
+
+/* ----- thankyou-lists ----- */
+
+.orderlylist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin-left: 100px
 }

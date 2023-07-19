@@ -12,6 +12,7 @@
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/small.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Lugrasimo&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -50,22 +51,27 @@
       <div class="thankyou-grid">
         <div id="orderDetails-formatted">
           <h2>Order Details</h2>
-          <p>Name: <em><span id="firstName"></span></em></p>
-          <p>Email: <em><span id="email"></span></em></p>
-          <p>Phone Number: <em><span id="phone"></span></em></p>
-          <p>Fruit Choice 1: <em><span id="fruit1"></span></em></p>
-          <p>Fruit Choice 2: <em><span id="fruit2"></span></em></p>
-          <p>Fruit Choice 3: <em><span id="fruit3"></span></em></p>
-          <p>Additional Instructions: <em><span id="instructions"></span></em></p>
+          <div class="orderlylist">
+            <p>Order Time: <em><span id="orderTime"></span></em></p>
+            <p>Name: <em><span id="firstName"></span></em></p>
+            <p>Email: <em><span id="email"></span></em></p>
+            <p>Phone Number: <em><span id="phone"></span></em></p>
+            <p>Fruit Choice 1: <em><span id="fruit1"></span></em></p>
+            <p>Fruit Choice 2: <em><span id="fruit2"></span></em></p>
+            <p>Fruit Choice 3: <em><span id="fruit3"></span></em></p>
+            <p>Additional Instructions: <em><span id="instructions"></span></em></p>
+          </div>
         </div>
 
         <div class="ordercalories">
           <h2>Nutrition</h2>
-          <p>Total carbohydrates: <u><span id="carbs"></span></u></span></p>
-          <p>Total protein: <u><span id="prot"></u></span></p>
-          <p>Total fat: <u><span id="fat"></span></u></p>
-          <p>Total sugar: <u><span id="sug"></span></u></p>
-          <p>Total calories: <u><span id="cals"></span></u></p>
+          <div class="orderlylist">
+            <p>Total carbohydrates: <u><span id="carbs"></span></u></span></p>
+            <p>Total protein: <u><span id="prot"></u></span></p>
+            <p>Total fat: <u><span id="fat"></span></u></p>
+            <p>Total sugar: <u><span id="sug"></span></u></p>
+            <p>Total calories: <u><span id="cals"></span></u></p>
+          </div>
         </div>
       </div>
 
@@ -105,12 +111,17 @@
     <footer>
       <p>Carlsbad, California 562-666-9999</p>
       <div class="footer-links">
-        <a class="logo-text" href="index.html"> BountifulFoods.com</a>
+        <a class="logo-text2" href="index.html"> BountifulFoods.com</a>
       </div>
+      <p>
+        APIs provided by <a href="https://www.fruityvice.com">Fruityvice</a>
+        and <a href="https://www.openweathermap.org">OpenWeatherMap</a>
+      </p>
       <p>
         Parker Hatch | WDD 230 | 2023 | Last updated:
         <span id="lastupdated"></span>
       </p>
+      
     </footer>
     <script src="./scripts/fruit-api.js" defer></script>
     <script src="./scripts/thankyou.js" defer></script>
