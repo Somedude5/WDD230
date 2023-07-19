@@ -27,5 +27,5 @@ function incrementTotalOrders() {
     updateTotalOrders();
 }
 
-// Call the function to update and display the total number of orders on page load
+// Call the function to update and display the total number of orders on page load, this will also show the button as well.
 updateTotalOrders();

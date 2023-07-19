@@ -48,7 +48,7 @@ function updateTotalOrders() {
     }
 }
 
-// Function to increment the total number of orders
+// Function to increment the total number of orders so they can be shown on the home screen
 function incrementTotalOrders() {
     const totalOrders = getTotalOrders();
     const newTotalOrders = totalOrders + 1;
@@ -56,7 +56,7 @@ function incrementTotalOrders() {
     updateTotalOrders();
 }
 
-// Handle form submission
+// Handle the form submission
 function handleFormSubmit(event) {
     event.preventDefault();
 

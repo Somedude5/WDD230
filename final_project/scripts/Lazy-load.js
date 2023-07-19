@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
   const paperbackground2 = document.querySelector('.card');
   const background1 = document.querySelector('.thankyou-main');
 
-
+  //Get the background to work with a pciture and lazy load it
   if (cardContainer) {
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
