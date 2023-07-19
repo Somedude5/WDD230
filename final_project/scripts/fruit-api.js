@@ -96,7 +96,7 @@ function handleFormSubmit(event) {
 
     event.target.reset();
 
-    window.location.href = 'somedude5.github.io/wdd230/final_project/final_project/thankyou.html';
+    window.location.href = 'thankyou.html';
     incrementTotalOrders();
 }
 
