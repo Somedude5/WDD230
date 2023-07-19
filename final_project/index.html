@@ -8,11 +8,6 @@
       content="Home Page for the Bountiful Foods website"
     />
     <title>Bountiful Foods - Home</title>
-    <script src="./scripts/fruit-api.js" defer></script>
-    <script src="./scripts/Lazy-load.js" defer></script>
-    <script src="./scripts/weatherapi.js" defer></script>
-    <script src="./scripts/hamburger-menu.js" defer></script>
-    <script src="./scripts/drinks.js" defer></script>
 
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
@@ -28,11 +23,11 @@
       <div class="logo-and-text">
         <img src="images/Bountiful-logo.png" alt="Logo image" class="logo" />
       </div>
-      <div>
-        <h1>Bountiful Foods</h1>
+      <div class="middle">
+        <em><h1>Bountiful Foods</h1></em>
         <h4>Home grown fruit, even better taste!</h4>
       </div>
-      <nav>
+      <nav class="thebar">
         <ul id="navbar" class="navigation">
           <li class="home_button1"><a href="index.html">Home</a></li>
           <li class="home_button2"><a href="fresh.html">Fresh</a></li>
@@ -43,7 +38,15 @@
 
     <main>
       <div class="main-grid">
-        <div class="social-media-container">
+        <div
+          class="social-media-container"
+          style="
+            background-image: url('images/placeholder_image.webp');
+            border: 1px solid black;
+            background-repeat: repeat;
+          "
+          loading="lazy"
+        >
           <h3>Social Media</h3>
           <div class="social-media-icons">
             <div class="facebook-div">
@@ -63,28 +66,8 @@
               >
             </div>
           </div>
-        </div>
-        <div
-          class="order-container"
-          style="background-image: url('images/placeholder_image.webp')"
-          loading="lazy"
-        >
-          <h3>Fresh Smoothies, made to order!</h3>
-          <button
-            class="action-button"
-            onclick="window.location.href = 'http://127.0.0.1:5500/final_project/fresh.html';"
-          >
-            Order Now!
-          </button>
 
-          <strong><p id="drinks-paragraph">Total Drinks Submitted: <span id="total-orders"></span></p></strong>
-          <button id="clear-button" style="display: none;">Clear Orders</button>
-
-
-
-        </div>
-        <div class="weather-widget-container">
-          <h3>Weather</h3>
+          <h3 style="margin-top: 40px">Weather</h3>
           <h5>Carlsbad, California</h5>
           <section>
             <i><span id="windspeed"></span> &deg;F</i>
@@ -95,7 +78,31 @@
           </section>
           <p>windspeed: <span id="temperature"></span> km/hr</p>
           <p>Humidity: <span id="humidity"></span></p>
-          <p>Windchill: <span id="windchill"></span></p>
+          <p style="display: none">Windchill: <span id="windchill"></span></p>
+        </div>
+        <div
+          class="order-container"
+          style="
+            background-image: url('images/placeholder_image.webp');
+            border: 1px solid black;
+          "
+          loading="lazy"
+        >
+          <h3 style="margin-top: 10px; margin-left: 11px; margin-right: 11px">
+            Fresh Smoothies, made to order!
+          </h3>
+          <button
+            class="action-button"
+            onclick="window.location.href = 'http://127.0.0.1:5500/final_project/fresh.html';"
+          >
+            Order Now!
+          </button>
+
+          <strong
+            ><p id="drinks-paragraph">
+              Total Drinks Submitted: <span id="total-orders"></span></p
+          ></strong>
+          <button id="clear-button" style="display: none">Clear Orders</button>
         </div>
       </div>
     </main>
@@ -103,28 +110,16 @@
     <footer>
       <p>Carlsbad, California 562-666-9999</p>
       <div class="footer-links">
-        <a class="logo-text" href="index.html"
-          ><img
-            src="./images/Bountiful-logo.png"
-            alt="Website Logo"
-            class="footer-logo"
-          />
-          BountifulFoods.com</a
-        >
-        <a
-          class="logo-text"
-          href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215847,-117.3290015,13z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"
-          >Find us on Google
-          <img
-            src="./images/maps_image.webp"
-            alt="google maps icon"
-            class="maps-logo"
-        /></a>
+        <a class="logo-text" href="index.html"> BountifulFoods.com</a>
       </div>
       <p>
         Parker Hatch | WDD 230 | 2023 | Last updated:
         <span id="lastupdated"></span>
       </p>
     </footer>
+    <script src="./scripts/fruit-api.js" defer></script>
+    <script src="./scripts/Lazy-load.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
+    <script src="./scripts/drinks.js" defer></script>
   </body>
 </html>

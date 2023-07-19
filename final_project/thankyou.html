@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Thank you page after a customer orders a drink."
+      content="Home Page for the Bountiful Foods website"
     />
-    <title>Bountiful Foods - Receipt</title>
-    <script src="./scripts/fruit-api.js" defer></script>
-    <script src="./scripts/thankyou.js" defer></script>
-    <script src="./scripts/drinks.js" defer></script>
+    <title>Bountiful Foods - Thank You!</title>
 
     <link rel="icon" href="./images/redketchup/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
@@ -26,11 +23,11 @@
       <div class="logo-and-text">
         <img src="images/Bountiful-logo.png" alt="Logo image" class="logo" />
       </div>
-      <div>
-        <h1>Bountiful Foods</h1>
+      <div class="middle">
+        <em><h1>Bountiful Foods</h1></em>
         <h4>Home grown fruit, even better taste!</h4>
       </div>
-      <nav>
+      <nav class="thebar">
         <ul id="navbar" class="navigation">
           <li class="home_button1"><a href="index.html">Home</a></li>
           <li class="home_button2"><a href="fresh.html">Fresh</a></li>
@@ -39,41 +36,49 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Thank You!</h1>
+    <main
+      class="thankyou-main"
+      style="
+        background-image: url('images/placeholder_image.webp');
+        border: 1px solid black;
+        background-repeat: repeat;
+      "
+      loading="lazy"
+    >
+      <h1><em>Thank You for your Patronage!</em></h1>
       <h3>Your order has been placed successfully. Here are the details:</h3>
       <div class="thankyou-grid">
         <div id="orderDetails-formatted">
           <h2>Order Details</h2>
-          <p>Name: <span id="firstName"></span></p>
-          <p>Email: <span id="email"></span></p>
-          <p>Phone Number: <span id="phone"></span></p>
-          <p>Fruit Choice 1: <span id="fruit1"></span></p>
-          <p>Fruit Choice 2: <span id="fruit2"></span></p>
-          <p>Fruit Choice 3: <span id="fruit3"></span></p>
-          <p>Additional Instructions: <span id="instructions"></span></p>
+          <p>Name: <em><span id="firstName"></span></em></p>
+          <p>Email: <em><span id="email"></span></em></p>
+          <p>Phone Number: <em><span id="phone"></span></em></p>
+          <p>Fruit Choice 1: <em><span id="fruit1"></span></em></p>
+          <p>Fruit Choice 2: <em><span id="fruit2"></span></em></p>
+          <p>Fruit Choice 3: <em><span id="fruit3"></span></em></p>
+          <p>Additional Instructions: <em><span id="instructions"></span></em></p>
         </div>
 
         <div class="ordercalories">
           <h2>Nutrition</h2>
-          <p>total carbohydrates: <span id="carbs"></span></p>
-          <p>total protein: <span id="prot"></span></p>
-          <p>total fat: <span id="fat"></span></p>
-          <p>total sugar: <span id="sug"></span></p>
-          <p>total calories: <span id="cals"></span></p>
+          <p>Total carbohydrates: <u><span id="carbs"></span></u></span></p>
+          <p>Total protein: <u><span id="prot"></u></span></p>
+          <p>Total fat: <u><span id="fat"></span></u></p>
+          <p>Total sugar: <u><span id="sug"></span></u></p>
+          <p>Total calories: <u><span id="cals"></span></u></p>
         </div>
       </div>
 
       <p>
-        Payment will be recieved upon pick up, expect about a 5 minute wait.
+        Payment will be recieved upon pick up, expect a 5 minute wait.
       </p>
-      <p>call or text us at 562-666-9999 for questions.</p>
+      <p>call or text us at <i>562-666-9999</i> for questions.</p>
 
       <div class="thankyou-grid">
         <div>
           <div class="social-media-container">
-            <h3>Howd we do?</h3>
-            <p>give us a rating and receive a free coupon!</p>
+            <h3>How'd We Do?</h3>
+            <p>Give us a rating on Twitter or Facebok and receive a free drink!</p>
             <div class="social-media-icons">
               <div class="facebook-div">
                 <a href="https://www.facebook.com/home" id="facebook_button"
@@ -100,28 +105,17 @@
     <footer>
       <p>Carlsbad, California 562-666-9999</p>
       <div class="footer-links">
-        <a class="logo-text" href="index.html"
-          ><img
-            src="./images/Bountiful-logo.png"
-            alt="Website Logo"
-            class="footer-logo"
-          />
-          BountifulFoods.com</a
-        >
-        <a
-          class="logo-text"
-          href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215847,-117.3290015,13z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"
-          >Find us on Google
-          <img
-            src="./images/maps_image.webp"
-            alt="google maps icon"
-            class="maps-logo"
-        /></a>
+        <a class="logo-text" href="index.html"> BountifulFoods.com</a>
       </div>
       <p>
         Parker Hatch | WDD 230 | 2023 | Last updated:
         <span id="lastupdated"></span>
       </p>
     </footer>
+    <script src="./scripts/fruit-api.js" defer></script>
+    <script src="./scripts/thankyou.js" defer></script>
+    <script src="./scripts/drinks.js" defer></script>
+    <script src="./scripts/Lazy-load.js" defer></script>
+    <script src="./scripts/weatherapi.js" defer></script>
   </body>
 </html>

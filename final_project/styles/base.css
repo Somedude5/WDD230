@@ -35,6 +35,7 @@ h3 {
 .logo {
   height: 200px;
   padding-left: 90px;
+  padding-top: 20px;
 }
 
 /* ------ Main CSS ------ */
@@ -43,7 +44,7 @@ header,
 footer,
 main {
   max-width: 1200px;
-  min-width: 480px;
+  min-width: 400px;
   margin: 0 auto;
   text-align: center;
   padding-left: 10px;
@@ -54,7 +55,7 @@ main {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: minmax(100px, 1fr) 2fr;
 }
 
 .action-button {
@@ -88,23 +89,24 @@ button#clear-button:hover {
 /* ------ Social Media Links & container ------ */
 
 .social-media-container {
-  grid-column: 1;
-  border: 1px solid black;
+  /* grid-column: 1; */
   padding: 10px;
+  background-color: rgba(194, 228, 228, 0.664);
 }
 
 /* ------ Weather Widget & container------ */
 
 .weather-widget-container {
-  grid-column: 3;
+  /* grid-column: 3; */
   border: 1px solid black;
   padding: 10px;
+  background-color: rgba(194, 228, 228, 0.664);
 }
 
 /* ------ Smoothie Pic and Order Button ------ */
 
 .order-container {
-  grid-column: 2;
+  /* grid-column: 2; */
   width: 800px;
   height: 800px;
   text-align: center;
@@ -121,6 +123,8 @@ li.home_button2,
 li.home_button3 {
   margin: 1px;
   background-color: rgb(39, 204, 113);
+  max-width: 480px;
+  min-width: none;
 }
 
 .order-container,
@@ -135,10 +139,14 @@ h3 {
 
 /* -------- Home Navbar -------- */
 
-nav {
+.middle {
+  padding: 30px;
+}
+
+.thebar {
   display: flex;
   background-color: var(--menu-bg-color);
-  max-width: 832px;
+  max-width: 830px;
   min-width: 480px;
   margin: 0 auto;
   row-gap: 1px;
@@ -155,7 +163,7 @@ nav ul {
 }
 
 nav ul li {
-  /* border: 1px solid black; */
+  flex-grow: 1;
   width: 100%;
   color: white;
   text-align: center;
@@ -163,7 +171,10 @@ nav ul li {
 }
 
 nav a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   padding: 1rem;
   text-decoration: none;
   color: white;
@@ -187,12 +198,7 @@ a {
 /* ----- Form CSS ------ */
 
 body {
-  /*font-family: "Open Sans", sans-serif;*/
-
-  /*font-family: 'Italiana', serif;*/
-
   font-family: "Pathway Gothic One", sans-serif;
-  /* min-height: 00vh; */
   font-size: 20px;
 }
 
@@ -251,35 +257,6 @@ div.column_1 {
   padding: 10px;
 }
 
-.member-desc-info {
-  font-size: 25px;
-  width: 100%;
-}
-
-.member-desc h5 {
-  margin: 0;
-}
-
-.member-level {
-  display: block;
-  width: 200px;
-}
-
-.gold_member {
-  color: gold;
-  background: linear-gradient(45deg, white, gold);
-}
-
-.silver_member {
-  color: silver;
-  background: linear-gradient(45deg, white, silver);
-}
-
-.bronze_member {
-  color: rgb(177, 51, 5);
-  background: linear-gradient(45deg, white, rgb(177, 51, 5));
-}
-
 .submit-button {
   grid-column: 2;
   display: flex;
@@ -288,6 +265,18 @@ div.column_1 {
   padding: 20px;
 }
 /* ------------------------------------------------ */
+
+/* ----- Fruit Drink Form ----- */
+
+.fruit-class {
+  border: 1px solid black;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 37, 37, 0.473);
+  border-radius: 10px;
+}
 
 .Thebutton {
   background-color: rgba(255, 37, 37, 0.651);
@@ -311,8 +300,6 @@ div.column_1 {
   font-size: 40px;
   margin-top: 250px;
 }
-.action-button:hover {
-}
 
 /* ------ thank you CSS ------ */
 
@@ -326,11 +313,18 @@ div.column_1 {
 div#orderDetails-formatted {
   border: 1px solid black;
   padding: 10px;
+  background-color: rgba(194, 228, 228, 0.664);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(3, 3, 3, 3);
 }
 
 div.ordercalories {
   border: 1px solid black;
   padding: 10px;
+  background-color: rgba(194, 228, 228, 0.664);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(3, 3, 3, 3);
+  
 }
 
 /* ------ CSS for about us card styling ------ */
@@ -404,12 +398,68 @@ img.maps-logo {
 
 img#card-img {
   width: 300px;
-  border-radius: 15%; /* Makes the image round */
-  box-shadow: 0px 2px 5px rgba(3, 3, 3, 2); /* Adds a shadow effect */
+  border-radius: 15%;
+  box-shadow: 0px 2px 5px rgba(3, 3, 3, 2); 
 }
 
 div.card {
-    background-image: url('./images/paper-texture.webp');
-    background-repeat: repeat;
-  }
+  background-color: rgba(194, 228, 228, 0.664);
+  box-shadow: 0px 2px 5px rgba(1, 1, 1, 1);
   
+}
+
+@media (max-width: 1200px) {
+  div.main-grid {
+    display: grid;
+    grid-template-rows: 1;
+  }
+
+  .social-media-container{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .order-container{
+    grid-row: 1;
+    
+  }
+
+  .weather-widget-container{
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  @media (max-width: 835px) {
+    .order-container {
+      width: 470px;
+    }
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block: 0px;
+    width: 50%;
+  }
+  @media (max-width: 600px) {
+    nav.thebar {
+      width: 480ex;
+    }
+
+    .header.header {
+      display: block;
+    }
+    .logo {
+      display: none;
+    }
+
+    .middle {
+      padding: 10px;
+    }
+    nav a {
+      padding: 5px;
+    }
+  }
+}
