@@ -96,7 +96,7 @@ function handleFormSubmit(event) {
 
     event.target.reset();
 
-    window.location.href = 'thankyou.html';
+    window.location.href = './final_project/thankyou.html';
     incrementTotalOrders();
 }
 
